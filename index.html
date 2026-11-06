@@ -1,0 +1,3537 @@
+<!doctype html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Sangmeshwar Jewellers | Jewellery Showroom Ahmedpur</title>
+  <meta name="description" content="Explore gold, silver, and diamond jewellery at Sangmeshwar Jewellers on Thodga Road, Basweshwar Nagar, Ahmedpur, Latur district, Maharashtra.">
+
+  <!-- Open Graph & Social Cards (og:image and og:url intentionally omitted until domain & hosted image exist) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sangmeshwar Jewellers | संगमेश्वर ज्वेलर्स – Ahmedpur">
+  <meta property="og:description" content="अहमदपूर येथील सोने, शुद्ध चांदी, डायमंड दागिने, कस्टमाईझ डिझाईन व रिपेअरिंगचे विश्वासू दालन.">
+  <meta property="og:locale" content="mr_IN">
+  <meta property="og:site_name" content="Sangmeshwar Jewellers">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sangmeshwar Jewellers | संगमेश्वर ज्वेलर्स">
+  <meta name="twitter:description" content="Local jewellery showroom for gold, silver, and diamond ornaments, custom design, and repair in Ahmedpur, Maharashtra.">
+
+  <!-- (1) Hero Image Preloaded (<= 200KB, not lazy-loaded) -->
+  <link rel="preload" as="image" href="images/hero_desktop.webp" imagesrcset="images/hero_mobile.webp 800w, images/hero_desktop.webp 1400w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+
+  <!-- (4) Attached Favicon-32, Favicon-512, and Apple Touch Icon on Orange Background -->
+  <meta name="theme-color" content="#E8681A">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Google Fonts: Preconnected, display=swap, weights 400 and 700 only -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Serif+Devanagari:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset & Design Tokens */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* WCAG AA Compliant Palettes */
+      --color-header-bg: #E8681A;       /* Saffron shopfront orange */
+      --color-header-charcoal: #1F1916; /* 5.4:1 contrast on #E8681A */
+      --color-btn-orange: #C4500E;      /* Deep orange for buttons on light bg (4.85:1 with white text) */
+      --color-btn-hover: #A7420B;
+      --color-charcoal-body: #1F1916;   /* Rich text charcoal (14:1 on cream) */
+      --color-charcoal-muted: #5C524C;  /* Subdued body & captions (4.7:1 on white/cream) */
+      --color-cream-bg: #FAF7F2;        /* Warm boutique cream canvas */
+      --color-cream-surface: #F4EFEA;
+      --color-cream-border: rgba(31, 25, 22, 0.12);
+      --color-gold-accent: #D4AF37;     /* Decorative gold accent */
+      --color-white: #FFFFFF;
+
+      --font-serif-en: 'Playfair Display', Georgia, serif;
+      --font-sans-en: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-serif-mr: 'Noto Serif Devanagari', 'Playfair Display', serif;
+      --font-sans-mr: 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      line-height: 1.65;
+      background-color: var(--color-cream-bg);
+      color: var(--color-charcoal-body);
+    }
+
+    /* Typography by Language */
+    html[lang="mr"] {
+      font-family: var(--font-sans-mr);
+    }
+    html[lang="mr"] h1,
+    html[lang="mr"] h2,
+    html[lang="mr"] h3,
+    html[lang="mr"] .font-heading {
+      font-family: var(--font-serif-mr);
+    }
+
+    html[lang="en"] {
+      font-family: var(--font-sans-en);
+    }
+    html[lang="en"] h1,
+    html[lang="en"] h2,
+    html[lang="en"] h3,
+    html[lang="en"] .font-heading {
+      font-family: var(--font-serif-en);
+    }
+
+    /* Bilingual Switch Rules: 100% No-JS Readability */
+    html[lang="mr"] .lang-en {
+      display: none !important;
+    }
+    html[lang="en"] .lang-mr {
+      display: none !important;
+    }
+
+    /* Subtle .placeholder styling: dotted underline only, zero tint, zero box */
+    .placeholder {
+      text-decoration: underline dotted 1.5px currentColor;
+    }
+
+    /* Accessibility Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      z-index: 1200;
+      background: var(--color-charcoal-body);
+      color: var(--color-cream-bg);
+      padding: 0.75rem 1.25rem;
+      border-radius: 4px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: top 0.2s;
+    }
+    .skip-link:focus {
+      top: 1rem;
+      outline: 2px solid var(--color-gold-accent);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    main {
+      padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+    }
+
+    /* Festival Announcement Banner */
+    .festival-banner {
+      background: linear-gradient(90deg, #A7420B 0%, #E8681A 50%, #A7420B 100%);
+      color: #FFFFFF;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 700;
+      position: relative;
+      z-index: 1001;
+      display: none;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    /*
+      (2) Header: Solid saffron header is DEFAULT in HTML.
+      JS adds .header-over-hero transparent state on load when window.scrollY <= 40,
+      switching back to solid state after scrolling past 40px using a passive listener.
+    */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 56px;
+      max-height: 56px;
+      background-color: var(--color-header-bg);
+      color: var(--color-header-charcoal);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      transition: background 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /*
+      (1) Transparent over-hero header applies ONLY below 900px;
+      at 900px and above, the header stays solid saffron (#E8681A) at all times.
+    */
+    @media (max-width: 899px) {
+      .site-header.header-over-hero {
+        background: linear-gradient(180deg, rgba(31, 25, 22, 0.75) 0%, rgba(31, 25, 22, 0.35) 75%, transparent 100%);
+        box-shadow: none;
+        border-bottom: none;
+        color: #FFFFFF;
+      }
+      .site-header.header-over-hero .header-nav a {
+        color: #FFFFFF;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+      }
+      .site-header.header-over-hero .wishlist-header-btn {
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px);
+        color: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+      .site-header.header-over-hero .lang-toggle-btn {
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px);
+        color: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+    }
+    @media (min-width: 900px) {
+      .site-header,
+      .site-header.header-over-hero {
+        background-color: var(--color-header-bg) !important;
+        color: var(--color-header-charcoal) !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+      }
+      .site-header .header-nav a,
+      .site-header.header-over-hero .header-nav a {
+        color: var(--color-header-charcoal) !important;
+        text-shadow: none !important;
+      }
+      .site-header .wishlist-header-btn,
+      .site-header.header-over-hero .wishlist-header-btn {
+        background-color: var(--color-cream-bg) !important;
+        color: var(--color-header-charcoal) !important;
+        border: 1px solid rgba(31, 25, 22, 0.2) !important;
+        backdrop-filter: none !important;
+      }
+      .site-header .lang-toggle-btn,
+      .site-header.header-over-hero .lang-toggle-btn {
+        background-color: var(--color-cream-bg) !important;
+        color: var(--color-header-charcoal) !important;
+        border: 1px solid rgba(31, 25, 22, 0.2) !important;
+        backdrop-filter: none !important;
+      }
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    /* (7) White logo on orange (default header) or dark scrim (over-hero) */
+    .brand-logo-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .header-logo-img {
+      height: 42px;
+      width: 102px;
+      max-height: 44px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .header-nav {
+      display: none;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .header-nav a {
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.9375rem;
+      transition: opacity 0.15s;
+    }
+    .site-header.header-over-hero .header-nav a {
+      color: #FFFFFF;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+    .site-header:not(.header-over-hero) .header-nav a {
+      color: var(--color-header-charcoal);
+    }
+    .header-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .wishlist-header-btn {
+      min-height: 40px;
+      padding: 0 0.75rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.875rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: background-color 0.15s;
+    }
+    .site-header.header-over-hero .wishlist-header-btn {
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .site-header:not(.header-over-hero) .wishlist-header-btn {
+      background-color: var(--color-cream-bg);
+      color: var(--color-header-charcoal);
+      border: 1px solid rgba(31, 25, 22, 0.2);
+    }
+
+    .wishlist-count {
+      background: var(--color-btn-orange);
+      color: #FFFFFF;
+      font-size: 0.75rem;
+      padding: 0.1rem 0.45rem;
+      border-radius: 10px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .lang-toggle-btn {
+      min-height: 40px;
+      padding: 0 0.875rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.875rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      transition: background-color 0.15s;
+    }
+    .site-header.header-over-hero .lang-toggle-btn {
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .site-header:not(.header-over-hero) .lang-toggle-btn {
+      background-color: var(--color-cream-bg);
+      color: var(--color-header-charcoal);
+      border: 1px solid rgba(31, 25, 22, 0.2);
+    }
+
+    .menu-toggle-btn {
+      min-height: 44px;
+      min-width: 44px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      border-radius: 6px;
+      color: inherit;
+    }
+
+    /* Buttons (Touch targets >= 48px) */
+    .btn {
+      min-height: 48px;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.15s, transform 0.1s, box-shadow 0.15s;
+      border: 1px solid transparent;
+      line-height: 1.2;
+    }
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background-color: var(--color-btn-orange);
+      color: var(--color-white);
+      box-shadow: 0 2px 8px rgba(196, 80, 14, 0.25);
+    }
+    .btn-primary:hover {
+      background-color: var(--color-btn-hover);
+    }
+
+    .btn-secondary {
+      background-color: var(--color-white);
+      color: var(--color-charcoal-body);
+      border-color: var(--color-cream-border);
+    }
+    .btn-secondary:hover {
+      background-color: var(--color-cream-surface);
+    }
+
+    .btn-whatsapp {
+      background-color: #128C7E;
+      color: var(--color-white);
+      box-shadow: 0 2px 8px rgba(18, 140, 126, 0.25);
+    }
+    .btn-whatsapp:hover {
+      background-color: #075E54;
+    }
+
+    /*
+      (1) Hero Section:
+      - Full-bleed on mobile with min-height: calc(100svh - 60px) [minus bottom bar]
+      - Split layout on desktop (text left, photo right) with min-height: 100svh
+      - Preloaded, non-lazy hero image (158KB, <= 200KB)
+      - Ken Burns animation is transform-only and disabled under prefers-reduced-motion
+    */
+    /*
+      Hero Section:
+      - Mobile (< 900px): Top portrait photo card (hero_mobile.webp 4:5, <= 120KB) with text below on #FAF7F2 cream canvas
+      - Desktop (>= 900px): Split layout (left text on cream with no scrim, right framed landscape photo card)
+      - Swapped via <picture> with media="(max-width: 899px)"
+      - Ken Burns animation is transform-only and disabled under prefers-reduced-motion
+    */
+    .hero-section {
+      position: relative;
+      background-color: var(--color-cream-bg);
+      min-height: calc(100svh - 60px);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: calc(56px + 1rem);
+      padding-bottom: 2.5rem;
+    }
+
+    .hero-container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .hero-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Mobile: Top-image card */
+    .hero-photo-col {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      order: -1;
+    }
+
+    .hero-framed-photo-card {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      box-shadow: 0 12px 32px rgba(31, 25, 22, 0.14);
+      border: 2px solid var(--color-gold-accent);
+      background: #2A211D;
+    }
+    .hero-framed-photo-card picture,
+    .hero-framed-photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: var(--hero-obj-pos, center);
+      display: block;
+      transform: scale(1);
+      animation: kenBurns 22s ease-in-out infinite alternate;
+      will-change: transform;
+    }
+
+    /* Mobile: Text below on cream canvas (no dark scrim needed) */
+    .hero-text-col {
+      color: var(--color-charcoal-body);
+      text-align: center;
+      width: 100%;
+      background: none;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    .hero-text-col h1 {
+      font-size: 2rem;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+      color: var(--color-charcoal-body);
+      text-shadow: none;
+    }
+
+    .hero-text-col p.hero-subtitle {
+      font-size: 1.0625rem;
+      margin-bottom: 1.75rem;
+      line-height: 1.6;
+      color: var(--color-charcoal-muted);
+      text-shadow: none;
+    }
+
+    .hero-cta-cluster {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.875rem;
+      justify-content: center;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-trust-bar-float {
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      color: var(--color-charcoal-body);
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      box-shadow: 0 4px 16px rgba(31, 25, 22, 0.08);
+      max-width: 540px;
+      text-align: left;
+      width: 100%;
+    }
+
+    /* Ken Burns: transform-only */
+    @keyframes kenBurns {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.08); }
+    }
+
+    .gold-shimmer-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.75rem;
+      background: linear-gradient(90deg, #D4AF37 0%, #FFF5D0 50%, #D4AF37 100%);
+      background-size: 200% auto;
+      animation: goldShimmer 4s linear infinite;
+      color: #3D2C04;
+      font-weight: 700;
+      font-size: 0.75rem;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    @keyframes goldShimmer {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    /* 5-Second Scan Strip */
+    .quick-scan-section {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--color-cream-border);
+      background: var(--color-white);
+    }
+
+    .scan-strip-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+
+    .scan-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      background: var(--color-cream-bg);
+      text-decoration: none;
+      color: var(--color-charcoal-body);
+      font-weight: 700;
+      font-size: 0.9375rem;
+      transition: background 0.15s;
+    }
+    .scan-item:hover {
+      background: #EDE6DC;
+    }
+
+    .scan-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-btn-orange);
+      flex-shrink: 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.25rem;
+    }
+    .section-header h2 {
+      font-size: 2rem;
+      color: var(--color-charcoal-body);
+      margin-bottom: 0.5rem;
+    }
+    .section-header p {
+      font-size: 1rem;
+      color: var(--color-charcoal-muted);
+      max-width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Editorial Collection Tiles */
+    .collections-section {
+      padding: 4rem 0;
+      background: var(--color-cream-surface);
+    }
+
+    .editorial-tiles-carousel {
+      display: flex;
+      gap: 1.5rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 1rem;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .editorial-tile {
+      flex: 0 0 88%;
+      scroll-snap-align: center;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: #2A211D;
+      box-shadow: 0 8px 24px rgba(31, 25, 22, 0.08);
+      border: 1px solid var(--color-cream-border);
+    }
+
+    .editorial-tile-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .editorial-tile:hover .editorial-tile-img {
+      transform: scale(1.05);
+    }
+
+    .editorial-tile-scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(31, 25, 22, 0.1) 0%, rgba(31, 25, 22, 0.85) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.75rem;
+      color: #FFFFFF;
+    }
+
+    .editorial-tile-scrim h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #FFFFFF;
+    }
+    .editorial-tile-scrim p {
+      font-size: 0.9375rem;
+      color: #F4EFEA;
+      margin-bottom: 1.25rem;
+      line-height: 1.5;
+    }
+
+    /*
+      (6) 12 Catalogue Items labeled as placeholders with NO weights, NO prices, NO purity.
+      All items are rendered directly in HTML so they are visible without JS.
+    */
+    .catalogue-section {
+      padding: 4.5rem 0;
+      background: var(--color-cream-bg);
+    }
+
+    .filter-chips-cluster {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .filter-chip-btn {
+      min-height: 44px;
+      padding: 0.5rem 1.25rem;
+      border-radius: 30px;
+      border: 1px solid var(--color-cream-border);
+      background: var(--color-white);
+      color: var(--color-charcoal-body);
+      font-weight: 700;
+      font-size: 0.9375rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .filter-chip-btn:hover {
+      border-color: var(--color-btn-orange);
+    }
+    .filter-chip-btn.active {
+      background: var(--color-btn-orange);
+      color: #FFFFFF;
+      border-color: var(--color-btn-orange);
+      box-shadow: 0 2px 6px rgba(196, 80, 14, 0.25);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: var(--color-white);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--color-cream-border);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(31, 25, 22, 0.08);
+    }
+
+    .product-thumb-wrap {
+      aspect-ratio: 1/1;
+      position: relative;
+      overflow: hidden;
+      background: #EAE3D9;
+    }
+    .product-thumb-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .product-card:hover .product-thumb-wrap img {
+      transform: scale(1.04);
+    }
+
+    .wishlist-heart-btn {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #9C8E86;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      transition: transform 0.15s, color 0.15s;
+      z-index: 5;
+    }
+    .wishlist-heart-btn:hover {
+      transform: scale(1.1);
+    }
+    .wishlist-heart-btn.is-wished {
+      color: #E53935;
+    }
+    .wishlist-heart-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+    }
+    .wishlist-heart-btn.is-wished svg {
+      fill: currentColor;
+    }
+
+    .product-details {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .product-placeholder-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--color-btn-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.35rem;
+    }
+    .product-title {
+      font-size: 1.125rem;
+      margin-bottom: 0.45rem;
+      color: var(--color-charcoal-body);
+    }
+    .product-desc {
+      font-size: 0.875rem;
+      color: var(--color-charcoal-muted);
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+
+    /* Wishlist Floating Button */
+    .wishlist-action-float {
+      position: fixed;
+      bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+      right: 1.25rem;
+      z-index: 940;
+      display: none;
+    }
+    .wishlist-send-btn {
+      background: #128C7E;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 30px;
+      padding: 0.75rem 1.25rem;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 16px rgba(18, 140, 126, 0.4);
+      transition: transform 0.15s;
+    }
+    .wishlist-send-btn:hover {
+      background: #075E54;
+      transform: translateY(-2px);
+    }
+
+    /*
+      (3) Visit Scheduler: Renamed 'Request a visit', min=today IST,
+      choices Morning / Afternoon / Evening, button 'Send request on WhatsApp',
+      note 'We’ll confirm on WhatsApp', no weekly-off logic.
+    */
+    .book-visit-section {
+      padding: 4.5rem 0;
+      background: var(--color-cream-surface);
+      border-top: 1px solid var(--color-cream-border);
+      border-bottom: 1px solid var(--color-cream-border);
+    }
+    .book-visit-card {
+      background: var(--color-white);
+      border-radius: 16px;
+      border: 1px solid var(--color-cream-border);
+      padding: 2.5rem 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      font-size: 0.9375rem;
+      color: var(--color-charcoal-body);
+    }
+    .form-control {
+      width: 100%;
+      min-height: 48px;
+      padding: 0.625rem 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--color-cream-border);
+      font-size: 1rem;
+      background: #FFFFFF;
+      font-family: inherit;
+      color: var(--color-charcoal-body);
+    }
+    .visit-confirm-note {
+      font-size: 0.875rem;
+      color: var(--color-charcoal-muted);
+      text-align: center;
+      margin-top: 0.75rem;
+      font-style: italic;
+    }
+
+    /* Google Reviews Section */
+    .google-reviews-section {
+      padding: 4.5rem 0;
+      background: var(--color-cream-surface);
+      border-top: 1px solid var(--color-cream-border);
+      display: none;
+    }
+
+    .google-rating-summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--color-white);
+      border: 1px solid var(--color-cream-border);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      color: var(--color-charcoal-body);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .google-stars {
+      color: #E8681A;
+      letter-spacing: 0.1em;
+    }
+
+    .google-reviews-carousel {
+      display: flex;
+      gap: 1.5rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 1rem;
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: 2rem;
+    }
+
+    .google-review-card {
+      flex: 0 0 88%;
+      scroll-snap-align: center;
+      background: var(--color-white);
+      border-radius: 14px;
+      border: 1px solid var(--color-cream-border);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+
+    .rev-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+    }
+    .rev-author-name {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--color-charcoal-body);
+    }
+    .rev-source-tag {
+      font-size: 0.75rem;
+      color: var(--color-charcoal-muted);
+      font-weight: 600;
+    }
+    .rev-stars-row {
+      color: #E8681A;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+    .rev-card-text {
+      font-size: 0.9375rem;
+      color: var(--color-charcoal-body);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+    .rev-card-date {
+      font-size: 0.8125rem;
+      color: var(--color-charcoal-muted);
+      margin-top: auto;
+    }
+
+    .google-actions-cluster {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /*
+      (5) QR Section: Static image files in /images (qr-site.svg, qr-review.svg) with alt text.
+      No QR library or CDN script.
+    */
+    .qr-section {
+      padding: 4rem 0;
+      background: var(--color-white);
+      text-align: center;
+      border-top: 1px solid var(--color-cream-border);
+    }
+    .qr-cards-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: stretch;
+    }
+    .qr-card {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      background: var(--color-cream-bg);
+      border: 1px solid var(--color-cream-border);
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      max-width: 340px;
+      width: 100%;
+    }
+    .qr-static-img-wrap {
+      width: 160px;
+      height: 160px;
+      background: #FFFFFF;
+      padding: 8px;
+      border-radius: 12px;
+      border: 1px solid var(--color-cream-border);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .qr-static-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* Other Sections: Custom, Services, Owner, Why, Rates, Visit */
+    .custom-design-section, .services-section, .owner-section, .why-section, .rates-section, .visit-section {
+      padding: 4rem 0;
+    }
+    .steps-grid, .why-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .step-card, .why-card, .service-card, .visit-info-card {
+      background: var(--color-white);
+      border-radius: 14px;
+      border: 1px solid var(--color-cream-border);
+      padding: 1.75rem;
+    }
+    .step-num {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--color-btn-orange);
+      color: #FFFFFF;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+    .service-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(232, 104, 26, 0.1);
+      color: var(--color-btn-orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .owner-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-cream-border);
+      border-radius: 16px;
+      padding: 2.25rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .owner-avatar-box {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: var(--color-cream-surface);
+      border: 2px solid var(--color-gold-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-charcoal-muted);
+      margin: 0 auto;
+    }
+    .owner-quote {
+      font-size: 1.0625rem;
+      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .rates-container {
+      background: var(--color-white);
+      border-radius: 16px;
+      border: 1px solid var(--color-cream-border);
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    }
+    .rate-cards-strip {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .rate-tile {
+      background: var(--color-cream-bg);
+      border: 1px solid var(--color-cream-border);
+      padding: 1.25rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .rate-metal {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--color-charcoal-muted);
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .rate-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-charcoal-body);
+      font-variant-numeric: tabular-nums;
+    }
+    .calc-disabled-notice {
+      background: #FFF9F2;
+      border: 1px dashed var(--color-btn-orange);
+      padding: 1.25rem;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .calc-disclaimer {
+      font-size: 0.8125rem;
+      color: var(--color-charcoal-muted);
+      text-align: center;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+    .visit-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .map-frame-box {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--color-cream-border);
+      background: #EAE3D9;
+      height: 340px;
+    }
+    .map-frame-box iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Footer: Dark charcoal background */
+    .site-footer {
+      background: var(--color-charcoal-body);
+      color: #FAF7F2;
+      padding: 3.5rem 0 2rem;
+      border-top: 3px solid var(--color-gold-accent);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (min-width: 640px) {
+      .footer-grid {
+        grid-template-columns: 1.5fr 1fr;
+      }
+    }
+    @media (min-width: 992px) {
+      .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      }
+    }
+    .footer-col h3 {
+      font-size: 1.125rem;
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+    }
+    .footer-col p {
+      font-size: 0.9375rem;
+      color: #CFC5BE;
+      line-height: 1.7;
+    }
+    .footer-col a {
+      color: #FAF7F2;
+      text-decoration: underline;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.875rem;
+      color: #A3968E;
+    }
+
+    /* Mobile Sticky Bottom Bar */
+    .mobile-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #FFFFFF;
+      border-top: 1px solid var(--color-cream-border);
+      padding: 0.625rem 1rem calc(0.625rem + env(safe-area-inset-bottom, 0px));
+      z-index: 950;
+      display: flex;
+      gap: 0.625rem;
+      justify-content: center;
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+    }
+    .mobile-bottom-bar .bottom-btn {
+      flex: 1;
+      min-height: 48px;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.875rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.375rem;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* (5) Site Toast Container */
+    .site-toast {
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1F1916;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      z-index: 9999;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      max-width: 90vw;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    /* Mobile Drawer */
+    .nav-drawer {
+      position: fixed;
+      top: 56px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(31, 25, 22, 0.96);
+      z-index: 890;
+      display: none;
+      flex-direction: column;
+      padding: 2rem 1.5rem;
+      gap: 1.25rem;
+    }
+    .nav-drawer.open {
+      display: flex;
+    }
+    .nav-drawer a {
+      color: #FFFFFF;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Scroll Reveal */
+    .reveal-item {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-item.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive Breakpoints: Tablet & Desktop */
+    @media (min-width: 768px) {
+      .header-nav {
+        display: flex;
+      }
+      .menu-toggle-btn {
+        display: none;
+      }
+      .mobile-bottom-bar {
+        display: none;
+      }
+      main {
+        padding-bottom: 0;
+      }
+      .scan-strip-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+      .editorial-tiles-carousel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow-x: visible;
+      }
+      .editorial-tile {
+        flex: auto;
+      }
+      .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .google-reviews-carousel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow-x: visible;
+      }
+      .google-review-card {
+        flex: auto;
+      }
+      .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .why-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .rate-cards-strip {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .visit-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr;
+      }
+    }
+
+    /* Desktop (min-width: 900px): Split Hero Layout */
+    @media (min-width: 900px) {
+      .hero-section {
+        min-height: 100svh;
+        padding-top: 56px;
+        padding-bottom: 0;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 3.5rem;
+        align-items: center;
+      }
+      .hero-photo-col {
+        order: 2;
+        max-width: none;
+        margin: 0;
+      }
+      .hero-framed-photo-card {
+        aspect-ratio: 4/3;
+        border-radius: 20px;
+        box-shadow: 0 16px 40px rgba(31, 25, 22, 0.18);
+      }
+      .hero-text-col {
+        order: 1;
+        text-align: left;
+      }
+      .hero-text-col h1 {
+        font-size: 2.5rem;
+      }
+      .hero-cta-cluster {
+        justify-content: flex-start;
+      }
+      .hero-trust-bar-float {
+        margin: 0;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* Accessibility: Reduced Motion (Ken Burns disabled, transitions zeroed) */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .hero-mobile-bg img,
+      .hero-framed-photo-card img {
+        animation: none !important;
+        transform: none !important;
+      }
+      .gold-shimmer-tag {
+        animation: none !important;
+      }
+      .reveal-item {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">
+    <span class="lang-mr">मुख्य मजकुरावर जा</span>
+    <span class="lang-en">Skip to main content</span>
+  </a>
+
+  <!-- Festival Announcement Banner -->
+  <div id="festivalBanner" class="festival-banner" role="banner" aria-label="Festive Announcement">
+    <span id="festivalText"></span>
+  </div>
+
+  <!--
+    (2) Header: Solid saffron header is DEFAULT in HTML.
+    JS adds .header-over-hero transparent state on load when scrollY <= 40,
+    switching back to solid after scrolling past 40px using a passive listener.
+  -->
+  <header id="siteHeader" class="site-header">
+    <div class="container header-inner">
+      <!-- (7) White logo strictly on orange / dark backgrounds -->
+      <a href="#top" class="brand-logo-link" aria-label="संगमेश्वर Sangmeshwar Jewellers">
+        <img src="images/sangmeshwar-logo-white.png" alt="संगमेश्वर Sangmeshwar Jewellers" class="header-logo-img" width="102" height="42">
+        <span class="sr-only">Sangmeshwar Jewellers संगमेश्वर ज्वेलर्स</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="header-nav" aria-label="Main Navigation">
+        <a href="#collections">
+          <span class="lang-mr">संग्रह</span>
+          <span class="lang-en">Collections</span>
+        </a>
+        <a href="#catalogue">
+          <span class="lang-mr">कॅटलॉग</span>
+          <span class="lang-en">Catalogue</span>
+        </a>
+        <a href="#custom">
+          <span class="lang-mr">कस्टम डिझाईन</span>
+          <span class="lang-en">Custom Design</span>
+        </a>
+        <a href="#request-visit">
+          <span class="lang-mr">भेटीची विनंती</span>
+          <span class="lang-en">Request a Visit</span>
+        </a>
+        <a href="#rates">
+          <span class="lang-mr">आजचे दर</span>
+          <span class="lang-en">Today's Rate</span>
+        </a>
+        <a href="#googleReviewsSection" id="navReviewsLink" style="display:none;">
+          <span class="lang-mr">रिव्ह्यूज</span>
+          <span class="lang-en">Reviews</span>
+        </a>
+        <a href="#visit">
+          <span class="lang-mr">पत्ता</span>
+          <span class="lang-en">Visit Us</span>
+        </a>
+        <a href="blog/">
+          <span class="lang-mr">मार्गदर्शक</span>
+          <span class="lang-en">Guides</span>
+        </a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button id="headerWishlistBtn" class="wishlist-header-btn" aria-label="View Wishlist">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          <span class="wishlist-count" id="wishlistCount">0</span>
+        </button>
+
+        <button id="langToggleBtn" class="lang-toggle-btn" aria-label="Toggle language between Marathi and English">
+          <span class="lang-mr">English</span>
+          <span class="lang-en">मराठी</span>
+        </button>
+
+        <button id="menuToggleBtn" class="menu-toggle-btn" aria-expanded="false" aria-controls="mobileNavDrawer" aria-label="Open mobile navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileNavDrawer" class="nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <a href="#collections" class="drawer-link">
+      <span class="lang-mr">दागिने संग्रह</span>
+      <span class="lang-en">Collections</span>
+    </a>
+    <a href="#catalogue" class="drawer-link">
+      <span class="lang-mr">१२ निवडक दागिने (कॅटलॉग)</span>
+      <span class="lang-en">Featured Catalogue</span>
+    </a>
+    <a href="#custom" class="drawer-link">
+      <span class="lang-mr">कस्टम डिझाईन</span>
+      <span class="lang-en">Custom Design</span>
+    </a>
+    <a href="#request-visit" class="drawer-link">
+      <span class="lang-mr">दालनास भेटीची विनंती करा</span>
+      <span class="lang-en">Request a Showroom Visit</span>
+    </a>
+    <a href="#rates" class="drawer-link">
+      <span class="lang-mr">आजचे दर</span>
+      <span class="lang-en">Today's Rate</span>
+    </a>
+    <a href="#services" class="drawer-link">
+      <span class="lang-mr">रिपेअर व सेवा</span>
+      <span class="lang-en">Repair &amp; Services</span>
+    </a>
+    <a href="#owner" class="drawer-link">
+      <span class="lang-mr">दुकानदारांचे मनोगत</span>
+      <span class="lang-en">Owner's Note</span>
+    </a>
+    <a href="#googleReviewsSection" id="drawerReviewsLink" class="drawer-link" style="display:none;">
+      <span class="lang-mr">गुगल रिव्ह्यूज</span>
+      <span class="lang-en">Google Reviews</span>
+    </a>
+    <a href="#qr" id="drawerQrLink" class="drawer-link" style="display:none;">
+      <span class="lang-mr">मोबाईल QR कोड</span>
+      <span class="lang-en">Mobile QR Code</span>
+    </a>
+    <a href="#visit" class="drawer-link">
+      <span class="lang-mr">पत्ता व वेळ</span>
+      <span class="lang-en">Visit Showroom</span>
+    </a>
+    <a href="blog/" class="drawer-link">
+      <span class="lang-mr">सोन्या-चांदीचे मार्गदर्शक लेख</span>
+      <span class="lang-en">Jewellery Buying Guides</span>
+    </a>
+  </div>
+
+  <main id="main-content">
+    <!--
+      (1) Hero:
+      - Split layout on desktop (text left, shopfront photo right)
+      - Full-bleed on mobile (min-height 100svh minus bottom bar)
+      - Preloaded, non-lazy WebP (158KB)
+      - Ken Burns is transform-only and disabled under prefers-reduced-motion
+    -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-grid">
+          <!-- Photo Column: Appears at top on mobile (< 900px), right column on desktop (>= 900px) -->
+          <div class="hero-photo-col">
+            <div class="hero-framed-photo-card">
+              <picture>
+                <source media="(max-width: 899px)" srcset="images/hero_mobile.webp">
+                <img src="images/hero_desktop.webp" alt="संगमेश्वर ज्वेलर्स - दागिन्यांचे दालन / Sangmeshwar Jewellers Showroom Exterior" width="1400" height="788" fetchpriority="high" style="object-fit: cover; object-position: var(--hero-obj-pos, center);">
+              </picture>
+            </div>
+          </div>
+
+          <!-- Text Column: Below photo card on mobile (< 900px), left column on desktop (>= 900px) -->
+          <div class="hero-text-col">
+            <div class="gold-shimmer-tag">
+              <span>✨</span>
+              <!-- Note: "दागिन्यांचे दालन" needs native review -->
+              <span class="lang-mr">अहमदपूरचे दागिन्यांचे दालन</span>
+              <span class="lang-en">Ahmedpur's Jewellery Showroom</span>
+            </div>
+            <h1>
+              <span class="lang-mr">नमस्कार! संगमेश्वर ज्वेलर्समध्ये आपले सहर्ष स्वागत</span>
+              <span class="lang-en">नमस्कार! Welcome to Sangmeshwar Jewellers</span>
+            </h1>
+            <p class="hero-subtitle">
+              <!-- Note: "दागिन्यांचे दालन" needs native review -->
+              <span class="lang-mr">अहमदपूरकरांच्या विश्वासाचे दागिन्यांचे दालन. <span class="placeholder">शुद्ध हॉलमार्क</span> सोने, ९९९ व ९२५ चांदी आणि आपल्या पसंतीचे मनमोहक दागिने.</span>
+              <span class="lang-en">Ahmedpur's trusted destination for <span class="placeholder">hallmark</span> gold, 999 &amp; 925 silver, and custom bespoke jewellery.</span>
+            </p>
+
+            <div class="hero-cta-cluster">
+              <a id="heroWaBtn" href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="display:none;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span class="lang-mr">WhatsApp वर बोला</span>
+                <span class="lang-en">WhatsApp Us</span>
+              </a>
+              <a id="heroCallBtn" href="tel:" class="btn btn-primary" style="display:none;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span class="lang-mr">कॉल करा</span>
+                <span class="lang-en">Call Us</span>
+              </a>
+              <a href="#catalogue" class="btn btn-secondary">
+                <span class="lang-mr">दागिने पहा</span>
+                <span class="lang-en">Explore Jewellery</span>
+              </a>
+              <a href="#request-visit" class="btn btn-secondary">
+                <span class="lang-mr">भेटीची विनंती</span>
+                <span class="lang-en">Request a Visit</span>
+              </a>
+            </div>
+
+            <!-- Above-the-fold Trust Bar -->
+            <div class="hero-trust-bar-float">
+              <div style="display:flex;align-items:flex-start;gap:0.625rem;font-size:0.9375rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4500E" stroke-width="2.2" style="flex-shrink:0;margin-top:2px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div>
+                  <strong>
+                    <span class="lang-mr">पत्ता: </span>
+                    <span class="lang-en">Address: </span>
+                  </strong>
+                  <span>थोडगा रोड, बसवेश्वर नगर, विद्या नगर, अहमदपूर, महाराष्ट्र ४१३५१५</span>
+                </div>
+              </div>
+              <div>
+                <a href="#visit" style="color:var(--color-btn-orange);font-weight:700;text-decoration:underline;font-size:0.9375rem;">
+                  <span class="lang-mr">नकाशावर पहा व दिशा मिळवा &rarr;</span>
+                  <span class="lang-en">Find on map &amp; get directions &rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5-Second Scan Strip -->
+    <section class="quick-scan-section" aria-label="Key Highlights">
+      <div class="container">
+        <div class="scan-strip-grid">
+          <a href="#catalogue" class="scan-item" data-filter="gold">
+            <div class="scan-icon">🪙</div>
+            <div>
+              <span class="lang-mr">सोने</span>
+              <span class="lang-en">Gold</span>
+            </div>
+          </a>
+          <a href="#catalogue" class="scan-item" data-filter="silver">
+            <div class="scan-icon">🥈</div>
+            <div>
+              <span class="lang-mr">चांदी</span>
+              <span class="lang-en">Silver</span>
+            </div>
+          </a>
+          <a href="#catalogue" class="scan-item" data-filter="diamond">
+            <div class="scan-icon">💎</div>
+            <div>
+              <span class="lang-mr">डायमंड</span>
+              <span class="lang-en">Diamond</span>
+            </div>
+          </a>
+          <a href="#custom" class="scan-item">
+            <div class="scan-icon">✏️</div>
+            <div>
+              <span class="lang-mr">कस्टम डिझाईन</span>
+              <span class="lang-en">Custom Design</span>
+            </div>
+          </a>
+          <a href="#services" class="scan-item">
+            <div class="scan-icon">🛠️</div>
+            <div>
+              <span class="lang-mr">रिपेअर व पॉलिश</span>
+              <span class="lang-en">Repair &amp; Care</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Collection Tiles -->
+    <section id="collections" class="collections-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="lang-mr">आमचे मुख्य दालन संग्रह</span>
+            <span class="lang-en">Editorial Showcase</span>
+          </h2>
+          <p>
+            <span class="lang-mr">संगमेश्वर ज्वेलर्स, थोडगा रोड, अहमदपूर येथे २२ कॅरेट (९१.६% शुद्ध सोने), १८ कॅरेट (७५.०% सोने) डायमंड दागिने, ९९९ फाईन चांदीची पूजा सामग्री आणि ९२५ स्टर्लिंग चांदीचे दागिने उपलब्ध आहेत.</span>
+            <span class="lang-en">Sangmeshwar Jewellers on Thodga Road, Ahmedpur provides 22K (91.6% pure gold) traditional ornaments, 18K (75.0% pure gold) diamond jewellery, 999 fine silver pooja articles, and 925 sterling silver payals.</span>
+          </p>
+        </div>
+
+        <div class="editorial-tiles-carousel">
+          <div class="editorial-tile">
+            <img src="images/collection_gold.webp" alt="२२ कॅरेट सोन्याचे पारंपरिक दागिने / 22K Hallmark Gold Necklace and Jhumkas" class="editorial-tile-img" width="800" height="600" loading="lazy">
+            <div class="editorial-tile-scrim">
+              <span class="gold-shimmer-tag" style="align-self:flex-start;">GOLD COLLECTION</span>
+              <h3>
+                <span class="lang-mr">हॉलमार्क सुवर्णालंकार</span>
+                <span class="lang-en"><span class="placeholder">Hallmark</span> Gold Heritage</span>
+              </h3>
+              <p>
+                <span class="lang-mr">पारंपरिक लग्न सराईचे हार, मंगळसूत्र, पाटल्या, तोडे आणि नथ.</span>
+                <span class="lang-en">Traditional bridal necklaces, mangalsutras, carved bangles, and heirloom ornaments.</span>
+              </p>
+              <button class="btn btn-primary item-wa-btn" data-item="Gold Collection">
+                <span class="lang-mr">WhatsApp वर विचारणा करा</span>
+                <span class="lang-en">Inquire on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="editorial-tile">
+            <img src="images/collection_silver.webp" alt="९९९ शुद्ध चांदीची पूजा सामग्री आणि ९२५ पैंजण / 999 Fine Silver Pooja Articles and 925 Sterling Silver Payal" class="editorial-tile-img" width="800" height="600" loading="lazy">
+            <div class="editorial-tile-scrim">
+              <span class="gold-shimmer-tag" style="align-self:flex-start;">SILVER COLLECTION</span>
+              <h3>
+                <span class="lang-mr">शुद्ध चांदीचे अलंकार व भांडी</span>
+                <span class="lang-en">Fine &amp; Sterling Silver</span>
+              </h3>
+              <p>
+                <span class="lang-mr">
+                  <span class="placeholder">९९९ फाईन चांदीची पूजा ताटे, मूर्ती, नाणी</span> आणि <span class="placeholder">९२५ चांदीचे पारंपरिक पैंजण</span>.
+                </span>
+                <span class="lang-en">
+                  <span class="placeholder">999 Fine Silver pooja sets, lamps, coins</span> and <span class="placeholder">925 Sterling Silver payal and anklets</span>.
+                </span>
+              </p>
+              <button class="btn btn-primary item-wa-btn" data-item="Silver Collection">
+                <span class="lang-mr">WhatsApp वर विचारणा करा</span>
+                <span class="lang-en">Inquire on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="editorial-tile">
+            <img src="images/collection_diamond.webp" alt="डायमंड सोलिटेअर रिंग आणि टॉप्स / Solitaire Diamond Engagement Ring and Studs" class="editorial-tile-img" width="800" height="600" loading="lazy">
+            <div class="editorial-tile-scrim">
+              <span class="gold-shimmer-tag" style="align-self:flex-start;">DIAMOND COLLECTION</span>
+              <h3>
+                <span class="lang-mr">डायमंड व सोलिटेअर दागिने</span>
+                <span class="lang-en">Diamond &amp; Solitaire</span>
+              </h3>
+              <p>
+                <span class="lang-mr">
+                  खास साखरपुड्यासाठी <span class="placeholder">सर्टिफाईड डायमंड</span> अंगठ्या, कानातले टॉप्स व नाजूक पेंडंट्स.
+                </span>
+                <span class="lang-en">
+                  <span class="placeholder">Certified diamond</span> engagement rings, daily studs, and brilliant pendants.
+                </span>
+              </p>
+              <button class="btn btn-primary item-wa-btn" data-item="Diamond Jewellery">
+                <span class="lang-mr">WhatsApp वर विचारणा करा</span>
+                <span class="lang-en">Inquire on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      (4) Catalogue:
+      - 7 featured cards labeled as "Sample design / दागिना नमुना" placeholders with NO weights, prices or purity.
+      - Strictly unique real photographs: no image reused across cards.
+      - Pre-rendered directly in HTML so all items show when JS is off.
+    -->
+    <section id="catalogue" class="catalogue-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="lang-mr">निवडक दागिने कॅटलॉग</span>
+            <span class="lang-en">Boutique Catalogue</span>
+          </h2>
+          <p>
+            <span class="lang-mr">आमच्या दालनातील प्रातिनिधिक डिझाईन्स खाली दिली असून प्रत्येक कार्ड 'दागिना नमुना' म्हणून दर्शवले आहे. ग्राहक थेट WhatsApp वर आजचे ताजे नमुने, उपलब्ध वजन व अचूक माहिती मागवू शकतात.</span>
+            <span class="lang-en">Browse featured design representations from our showroom in Ahmedpur, Latur district; each card represents a sample design ('Sample design / दागिना नमुना'). Inquire directly on WhatsApp for today's designs and details.</span>
+          </p>
+        </div>
+
+        <div class="filter-chips-cluster" role="tablist" aria-label="Product categories">
+          <button class="filter-chip-btn active" data-filter="all">
+            <span class="lang-mr">सर्व दागिने (All)</span>
+            <span class="lang-en">All Jewellery</span>
+          </button>
+          <button class="filter-chip-btn" data-filter="gold">
+            <span class="lang-mr">सोने (Gold)</span>
+            <span class="lang-en">Gold</span>
+          </button>
+          <button class="filter-chip-btn" data-filter="silver">
+            <span class="lang-mr">चांदी (Silver)</span>
+            <span class="lang-en">Silver</span>
+          </button>
+          <button class="filter-chip-btn" data-filter="diamond">
+            <span class="lang-mr">डायमंड (Diamond)</span>
+            <span class="lang-en">Diamond</span>
+          </button>
+          <button class="filter-chip-btn" data-filter="wedding">
+            <span class="lang-mr">लग्नसराई (Wedding)</span>
+            <span class="lang-en">Wedding</span>
+          </button>
+          <button class="filter-chip-btn" data-filter="daily">
+            <span class="lang-mr">दैनंदिन वापर (Daily Wear)</span>
+            <span class="lang-en">Daily Wear</span>
+          </button>
+        </div>
+
+        <!-- Pre-rendered Products in Static HTML (No-JS safe; Strictly unique photos) -->
+        <div id="productsGrid" class="products-grid">
+          <!-- 1. Lakshmi Mangalsutra -->
+          <article class="product-card" data-category="gold" data-tag="wedding" data-id="p1">
+            <div class="product-thumb-wrap">
+              <img src="images/product_mangalsutra.webp" alt="लक्ष्मी मणी मंगळसूत्र / Lakshmi Motif Mangalsutra" width="600" height="600" loading="lazy">
+              <button class="wishlist-heart-btn" data-id="p1" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+            </div>
+            <div class="product-details">
+              <span class="product-placeholder-badge placeholder"><span class="lang-mr">दागिना नमुना</span><span class="lang-en">Sample Design</span></span>
+              <h3 class="product-title font-heading"><span class="lang-mr">लक्ष्मी मणी मंगळसूत्र</span><span class="lang-en">Lakshmi Motif Mangalsutra</span></h3>
+              <p class="product-desc"><span class="lang-mr placeholder">काळ्या मण्यांसह मध्यभागी घडवलेले पारंपरिक नक्षीदार लक्ष्मी पेंडंट.</span><span class="lang-en placeholder">Traditional double-string black beads with handcrafted Lakshmi motif pendant.</span></p>
+              <button class="btn btn-primary product-wa-btn" data-name="Lakshmi Motif Mangalsutra" style="width:100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span class="lang-mr">WhatsApp वर विचारा</span><span class="lang-en">Ask on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 2. Carved Bangles -->
+          <article class="product-card" data-category="gold" data-tag="wedding" data-id="p2">
+            <div class="product-thumb-wrap">
+              <img src="images/product_bangles.webp" alt="नक्षीदार सुवर्ण पाटल्या / Carved Gold Bangles" width="600" height="600" loading="lazy">
+              <button class="wishlist-heart-btn" data-id="p2" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+            </div>
+            <div class="product-details">
+              <span class="product-placeholder-badge placeholder"><span class="lang-mr">दागिना नमुना</span><span class="lang-en">Sample Design</span></span>
+              <h3 class="product-title font-heading"><span class="lang-mr">नक्षीदार सुवर्ण पाटल्या (जोड)</span><span class="lang-en">Carved Gold Bangles (Pair)</span></h3>
+              <p class="product-desc"><span class="lang-mr placeholder">फुलांची आणि पानांची नाजुक नक्षी असलेल्या पारंपरिक पाटल्या.</span><span class="lang-en placeholder">Pair of traditional Maharashtrian floral carved broad bangles.</span></p>
+              <button class="btn btn-primary product-wa-btn" data-name="Carved Gold Bangles" style="width:100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span class="lang-mr">WhatsApp वर विचारा</span><span class="lang-en">Ask on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 3. Silver Kada -->
+          <article class="product-card" data-category="silver" data-tag="daily" data-id="p3">
+            <div class="product-thumb-wrap">
+              <img src="images/product_silver_kada.webp" alt="९२५ चांदीचे कोरीव कडे / 925 Sterling Silver Kada" width="600" height="600" loading="lazy">
+              <button class="wishlist-heart-btn" data-id="p3" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+            </div>
+            <div class="product-details">
+              <span class="product-placeholder-badge placeholder"><span class="lang-mr">दागिना नमुना</span><span class="lang-en">Sample Design</span></span>
+              <h3 class="product-title font-heading"><span class="lang-mr">९२५ चांदीचे कोरीव कडे (कडा)</span><span class="lang-en">925 Sterling Silver Kada</span></h3>
+              <p class="product-desc"><span class="lang-mr placeholder">भक्कम चांदीचे नक्षीदार कडे, पुरुष व महिलांसाठी दैनंदिन वापर.</span><span class="lang-en placeholder">Solid engraved cuff bracelet in sterling silver for daily style.</span></p>
+              <button class="btn btn-primary product-wa-btn" data-name="925 Sterling Silver Kada" style="width:100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span class="lang-mr">WhatsApp वर विचारा</span><span class="lang-en">Ask on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 4. Diamond Studs -->
+          <article class="product-card" data-category="diamond" data-tag="daily" data-id="p4">
+            <div class="product-thumb-wrap">
+              <img src="images/product_diamond_studs.webp" alt="डायमंड सोलिटेअर टॉप्स / Diamond Solitaire Studs" width="600" height="600" loading="lazy">
+              <button class="wishlist-heart-btn" data-id="p4" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+            </div>
+            <div class="product-details">
+              <span class="product-placeholder-badge placeholder"><span class="lang-mr">दागिना नमुना</span><span class="lang-en">Sample Design</span></span>
+              <h3 class="product-title font-heading"><span class="lang-mr">डायमंड सोलिटेअर टॉप्स / कुडी</span><span class="lang-en">Diamond Solitaire Studs</span></h3>
+              <p class="product-desc"><span class="lang-mr placeholder">दररोजच्या वापरासाठी आणि सोहळ्यांसाठी चमकदार सोलिटेअर डायमंड टॉप्स.</span><span class="lang-en placeholder">Brilliant cut diamond solitaire studs for versatile daily elegance.</span></p>
+              <button class="btn btn-primary product-wa-btn" data-name="Diamond Solitaire Studs" style="width:100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span class="lang-mr">WhatsApp वर विचारा</span><span class="lang-en">Ask on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 5. Traditional Kolhapuri Saaj & Haram -->
+          <article class="product-card" data-category="gold" data-tag="wedding" data-id="p5">
+            <div class="product-thumb-wrap">
+              <img src="images/collection_gold.webp" alt="पारंपरिक कोल्हापुरी साज व हार / Traditional Kolhapuri Saaj & Haram" width="600" height="600" loading="lazy">
+              <button class="wishlist-heart-btn" data-id="p5" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+            </div>
+            <div class="product-details">
+              <span class="product-placeholder-badge placeholder"><span class="lang-mr">दागिना नमुना</span><span class="lang-en">Sample Design</span></span>
+              <h3 class="product-title font-heading"><span class="lang-mr">पारंपरिक कोल्हापुरी साज व हार</span><span class="lang-en">Traditional Kolhapuri Saaj &amp; Haram</span></h3>
+              <p class="product-desc"><span class="lang-mr placeholder">पारंपरिक २१ पानांचे भरगच्च सुवर्ण नक्षीकाम असलेले पारंपरिक हार.</span><span class="lang-en placeholder">Traditional 21-motif heritage necklace crafted with intricate detailing.</span></p>
+              <button class="btn btn-primary product-wa-btn" data-name="Traditional Kolhapuri Saaj & Haram" style="width:100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span class="lang-mr">WhatsApp वर विचारा</span><span class="lang-en">Ask on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 6. Fine Silver Pooja Thali -->
+          <article class="product-card" data-category="silver" data-tag="wedding" data-id="p6">
+            <div class="product-thumb-wrap">
+              <img src="images/collection_silver.webp" alt="९९९ चांदीचे पूजा ताट सेट / 999 Fine Silver Pooja Thali" width="600" height="600" loading="lazy">
+              <button class="wishlist-heart-btn" data-id="p6" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+            </div>
+            <div class="product-details">
+              <span class="product-placeholder-badge placeholder"><span class="lang-mr">दागिना नमुना</span><span class="lang-en">Sample Design</span></span>
+              <h3 class="product-title font-heading"><span class="lang-mr">९९९ चांदीचे पूजा ताट सेट</span><span class="lang-en">999 Fine Silver Pooja Thali</span></h3>
+              <p class="product-desc"><span class="lang-mr placeholder">समई, अगरबत्ती स्टँड, वाटी आणि कलशासह संपूर्ण मंगल पूजा संच.</span><span class="lang-en placeholder">Complete ceremonial pooja set with engraved thali and diya.</span></p>
+              <button class="btn btn-primary product-wa-btn" data-name="999 Fine Silver Pooja Thali" style="width:100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span class="lang-mr">WhatsApp वर विचारा</span><span class="lang-en">Ask on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 7. Solitaire Diamond Ring -->
+          <article class="product-card" data-category="diamond" data-tag="wedding" data-id="p7">
+            <div class="product-thumb-wrap">
+              <img src="images/collection_diamond.webp" alt="सोलिटेअर डायमंड अंगठी / Solitaire Diamond Ring" width="600" height="600" loading="lazy">
+              <button class="wishlist-heart-btn" data-id="p7" aria-label="Add to wishlist"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>
+            </div>
+            <div class="product-details">
+              <span class="product-placeholder-badge placeholder"><span class="lang-mr">दागिना नमुना</span><span class="lang-en">Sample Design</span></span>
+              <h3 class="product-title font-heading"><span class="lang-mr">सोलिटेअर डायमंड अंगठी</span><span class="lang-en">Solitaire Diamond Ring</span></h3>
+              <p class="product-desc"><span class="lang-mr placeholder">साखरपुड्यासाठी व खास क्षणांसाठी चमकदार सोलिटेअर डायमंड अंगठी.</span><span class="lang-en placeholder">Sparkling solitaire diamond engagement ring design.</span></p>
+              <button class="btn btn-primary product-wa-btn" data-name="Solitaire Diamond Ring" style="width:100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span class="lang-mr">WhatsApp वर विचारा</span><span class="lang-en">Ask on WhatsApp</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wishlist Floating Action Bar -->
+    <div id="wishlistFloat" class="wishlist-action-float">
+      <button id="sendWishlistBtn" class="wishlist-send-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <span class="lang-mr">माझी विशलिस्ट पाठवा (<span id="wishlistFloatCount">0</span>)</span>
+        <span class="lang-en">Send Wishlist (<span id="wishlistFloatCountEn">0</span>)</span>
+      </button>
+    </div>
+
+    <!--
+      (3) "Request a Visit" Section:
+      - Renamed "Request a visit"
+      - Min date = today in IST
+      - Time choices: Morning / Afternoon / Evening
+      - Button: "Send request on WhatsApp"
+      - Note: "We’ll confirm on WhatsApp"
+      - No weekly-off logic
+    -->
+    <section id="request-visit" class="book-visit-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="lang-mr">दालनास भेटीची विनंती करा</span>
+            <span class="lang-en">Request a Visit</span>
+          </h2>
+          <p>
+            <span class="lang-mr">आपल्या सोयीनुसार दिवस व वेळ निवडून विनंती पाठवा; आम्ही WhatsApp वर निश्चिती कळवू.</span>
+            <span class="lang-en">Select a preferred day and time choice; we'll confirm your visit on WhatsApp.</span>
+          </p>
+        </div>
+
+        <div class="book-visit-card">
+          <form id="bookVisitForm">
+            <div class="form-group">
+              <label for="visitDateInput">
+                <span class="lang-mr">भेटीचा दिवस निवडा:</span>
+                <span class="lang-en">Select Preferred Day:</span>
+              </label>
+              <input type="date" id="visitDateInput" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="visitTimeSelect">
+                <span class="lang-mr">सोयीची वेळ निवडा:</span>
+                <span class="lang-en">Select Time Choice:</span>
+              </label>
+              <select id="visitTimeSelect" class="form-control">
+                <option value="Morning">सकाळ (Morning: 10:00 AM – 1:00 PM)</option>
+                <option value="Afternoon" selected>दुपार (Afternoon: 1:00 PM – 5:00 PM)</option>
+                <option value="Evening">संध्याकाळ (Evening: 5:00 PM – 8:30 PM)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="visitNotesInput">
+                <span class="lang-mr">आपण काय पाहू इच्छिता? (ऐच्छिक):</span>
+                <span class="lang-en">What are you looking for? (Optional):</span>
+              </label>
+              <select id="visitNotesInput" class="form-control">
+                <option value="लग्नसराई सोन्याचे दागिने / Bridal Gold Jewellery">लग्नसराई सोन्याचे दागिने / Bridal Gold Jewellery</option>
+                <option value="चांदीचे पूजा साहित्य / Silver Pooja Articles">चांदीचे पूजा साहित्य / Silver Pooja Articles</option>
+                <option value="कस्टम डिझाईन घडवणे / Custom Jewellery Making">कस्टम डिझाईन घडवणे / Custom Jewellery Making</option>
+                <option value="जुने सोने बदलणे / Old Gold Exchange">जुने सोने बदलणे / Old Gold Exchange</option>
+                <option value="सामान्य भेट व पाहणी / General Showroom Visit">सामान्य भेट व पाहणी / General Showroom Visit</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp" style="width:100%;font-size:1.0625rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span class="lang-mr">WhatsApp वर विनंती पाठवा</span>
+              <span class="lang-en">Send request on WhatsApp</span>
+            </button>
+            <p class="visit-confirm-note">
+              <span class="lang-mr">* आम्ही WhatsApp वर निश्चिती कळवू</span>
+              <span class="lang-en">* We’ll confirm on WhatsApp</span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Design Section -->
+    <section id="custom" class="custom-design-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="lang-mr">आपल्या आवडीचे दागिने घडवून घ्या</span>
+            <span class="lang-en">Custom Jewellery Design</span>
+          </h2>
+          <p>
+            <span class="lang-mr">कस्टम दागिने घडवण्यासाठी ग्राहक स्वतःचे रेखाचित्र, फोटो किंवा जुना दागिना शेअर करू शकतात; काम सुरू करण्यापूर्वी कॅरेट शुद्धता, अंदाजे वजन व घडणावळीचा अंदाज दिला जातो.</span>
+            <span class="lang-en">Custom jewellery at Sangmeshwar Jewellers is handcrafted in Ahmedpur based on customer drawings, heirloom references, or reference photographs with transparent upfront estimates.</span>
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">१</div>
+            <h3>
+              <span class="lang-mr">१. डिझाईन किंवा फोटो शेअर करा</span>
+              <span class="lang-en">1. Share Your Idea</span>
+            </h3>
+            <p>
+              <span class="lang-mr">आपल्या आवडीचा फोटो, रेखाचित्र किंवा जुना दागिना WhatsApp वर पाठवा किंवा दुकानात घेऊन या.</span>
+              <span class="lang-en">Bring or WhatsApp us a reference photo, sketch, or existing family design.</span>
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">२</div>
+            <h3>
+              <span class="lang-mr">२. डिझाईन व अंदाज ठरवा</span>
+              <span class="lang-en">2. Design &amp; Estimate</span>
+            </h3>
+            <p>
+              <span class="lang-mr">
+                वजन, कॅरेट आणि घडणावळ यानुसार <span class="placeholder">काम सुरू करण्यापूर्वी अंदाज</span> ठरवला जातो.
+              </span>
+              <span class="lang-en">
+                We review dimensions, purity, and budget with an <span class="placeholder">estimate before work starts</span>.
+              </span>
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">३</div>
+            <h3>
+              <span class="lang-mr">३. कुशल कारागिरी व सुपूर्द</span>
+              <span class="lang-en">3. Handcrafted Delivery</span>
+            </h3>
+            <p>
+              <span class="lang-mr">
+                स्थानिक कुशल कारागिरांकडून काळजीपूर्वक घडवून दागिना <span class="placeholder">वेळेवर सुपूर्द</span> केला जातो.
+              </span>
+              <span class="lang-en">
+                Meticulously handcrafted by skilled karigars and <span class="placeholder">delivered on time</span> with hallmark purity.
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:2rem;">
+          <button id="customDesignWaBtn" class="btn btn-whatsapp" style="font-size:1.0625rem;padding:0.875rem 2rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span class="lang-mr">आपली डिझाईन WhatsApp वर पाठवा</span>
+            <span class="lang-en">Send Your Design on WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Repair & Services -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="lang-mr">दागिने दुरुस्ती व इतर सेवा</span>
+            <span class="lang-en">Jewellery Repair &amp; Services</span>
+          </h2>
+          <p>
+            <span class="lang-mr">आपल्या दागिन्यांचे मूळ सौंदर्य जपण्यासाठी विश्वासू व तत्पर सेवा</span>
+            <span class="lang-en">Professional care and restoration to keep your precious jewellery radiant for generations</span>
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">✨</div>
+            <div>
+              <h3>
+                <span class="lang-mr">पॉलिशिंग व सफाई</span>
+                <span class="lang-en">Cleaning &amp; Polishing</span>
+              </h3>
+              <p>
+                <span class="lang-mr">
+                  जुने सोने व चांदीचे दागिने <span class="placeholder">अल्ट्रासोनिक पॉलिशिंग</span> करून पुन्हा नव्यासारखे चकाकदार केले जातात.
+                </span>
+                <span class="lang-en">
+                  Restoring luster to dulled gold and silver through gentle cleaning and <span class="placeholder">ultrasonic polishing</span>.
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📏</div>
+            <div>
+              <h3>
+                <span class="lang-mr">माप लहान/मोठे करणे (रिसायझिंग)</span>
+                <span class="lang-en">Ring &amp; Bangle Resizing</span>
+              </h3>
+              <p>
+                <span class="lang-mr">अंगठी, बांगड्या व ब्रेसलेटचे अचूक मापाने सुरक्षित रिसायझिंग.</span>
+                <span class="lang-en">Accurate resizing for rings, bangles, and bracelets without compromising craftsmanship integrity.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🛠️</div>
+            <div>
+              <h3>
+                <span class="lang-mr">तुटलेले दागिने जोडणे व जीर्णोद्धार</span>
+                <span class="lang-en">Repair &amp; Restoration</span>
+              </h3>
+              <p>
+                <span class="lang-mr">
+                  तुटलेली साखळी, हुक बदलणे, खडे बसवणे व पारंपरिक दागिन्यांचा <span class="placeholder">जीर्णोद्धार</span>.
+                </span>
+                <span class="lang-en">
+                  Soldering broken links, clasp replacement, gemstone resetting, and <span class="placeholder">heirloom restoration</span>.
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">⚖️</div>
+            <div>
+              <h3>
+                <span class="lang-mr">जुने सोने बदलून नवीन दागिने</span>
+                <span class="lang-en">Old Gold Exchange</span>
+              </h3>
+              <p>
+                <span class="lang-mr">
+                  आपल्याकडील जुने सोने देऊन <span class="placeholder">पारदर्शक वजन व शुद्धता चाचणीनंतर</span> नवीन हॉलमार्क दागिने मिळवा.
+                </span>
+                <span class="lang-en">
+                  Exchange old gold ornaments with <span class="placeholder">transparent weighing and purity evaluation</span> for new hallmark jewellery.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Owner Note Section -->
+    <section id="owner" class="owner-section">
+      <div class="container">
+        <div class="owner-card">
+          <div class="owner-avatar-box">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <div>
+            <div class="owner-quote">
+              <span class="lang-mr placeholder">
+                "दागिना म्हणजे केवळ मौल्यवान धातू नसून आपल्या भावना आणि पिढ्यानपिढ्यांचा विश्वास असतो. संगमेश्वर ज्वेलर्समध्ये आपण कुटुंब म्हणून या. चहा घ्या, शांतपणे दागिने पहा, आम्ही आपल्याला योग्य निवड करण्यास प्रेमाने मदत करू."
+              </span>
+              <span class="lang-en placeholder">
+                "Jewellery is never merely precious metal—it represents deep familial milestones and trust passed down through generations. Visit us, have a cup of tea, and we will help you choose at your own relaxed pace."
+              </span>
+            </div>
+            <div class="owner-signature">
+              <span class="lang-mr">— संचालक, संगमेश्वर ज्वेलर्स, अहमदपूर</span>
+              <span class="lang-en">— Proprietor, Sangmeshwar Jewellers, Ahmedpur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="lang-mr">संगमेश्वर ज्वेलर्स का निवडावे?</span>
+            <span class="lang-en">Why Sangmeshwar Jewellers?</span>
+          </h2>
+          <p>
+            <span class="lang-mr">स्थानिक विश्वास, शुद्धतेची हमी आणि पारदर्शक व्यवहार</span>
+            <span class="lang-en">Local community trust, hallmark standards, and completely transparent weighing</span>
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div style="font-size:2rem;margin-bottom:0.75rem;">🛡️</div>
+            <h3>
+              <span class="lang-mr">हॉलमार्क शुद्धता</span>
+              <span class="lang-en">Hallmark Purity</span>
+            </h3>
+            <p>
+              <span class="lang-mr">
+                सर्व दागिन्यांवर <span class="placeholder">हॉलमार्क शुद्धतेची खात्री</span> दिली जाते, ज्यामुळे आपल्या सोन्याची किंमत नेहमी सुरक्षित राहते.
+              </span>
+              <span class="lang-en">
+                Backed by <span class="placeholder">hallmarked purity assurance</span>, ensuring your precious metal retains enduring value.
+              </span>
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div style="font-size:2rem;margin-bottom:0.75rem;">⚖️</div>
+            <h3>
+              <span class="lang-mr">पारदर्शक वजन व भाव</span>
+              <span class="lang-en">Transparent Weighing</span>
+            </h3>
+            <p>
+              <span class="lang-mr">
+                ग्राहकांसमोर डिजिटल वजन काटा आणि <span class="placeholder">पारदर्शक वजन</span> पद्धतीचा अवलंब.
+              </span>
+              <span class="lang-en">
+                Certified digital scales in front of customers with <span class="placeholder">transparent weighing</span> and honest pricing.
+              </span>
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div style="font-size:2rem;margin-bottom:0.75rem;">🤝</div>
+            <h3>
+              <span class="lang-mr">स्थानिक कुटुंबांचा विश्वास</span>
+              <span class="lang-en">Trusted Local Jeweller</span>
+            </h3>
+            <p>
+              <span class="lang-mr">
+                अहमदपूरमधील पिढ्यान्-पिढ्या जोडलेले नाते आणि दागिन्यांची <span class="placeholder">आयुष्यभराची काळजी</span>.
+              </span>
+              <span class="lang-en">
+                Proudly rooted in Ahmedpur with personal relationship, warm care, and <span class="placeholder">lifelong care</span>.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Today's Rate & Weight Estimator -->
+    <section id="rates" class="rates-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="lang-mr">आजचे सोने व चांदीचे दर</span>
+            <span class="lang-en">Today's Gold &amp; Silver Rate</span>
+          </h2>
+          <p>
+            <span class="lang-mr">दररोजचे अधिकृत दर व साधारण अंदाज काढण्यासाठी कॅल्क्युलेटर</span>
+            <span class="lang-en">Daily market indicative rates and interactive jewellery weight estimator</span>
+          </p>
+        </div>
+
+        <div class="rates-container">
+          <div id="rateDateDisplay" class="rate-date-badge" style="text-align:center;font-size:0.875rem;color:var(--color-charcoal-muted);margin-bottom:1.25rem;">
+            <span class="lang-mr">तारीख: दर विचारण्यासाठी खालील बटण दाबा</span>
+            <span class="lang-en">Date: Tap below to ask today's verified rate</span>
+          </div>
+
+          <div id="ratesBoard" class="rate-cards-strip">
+            <div class="rate-tile">
+              <div class="rate-metal">२४ कॅरेट सोने / 24K Gold</div>
+              <div class="rate-value" id="rate24kVal">
+                <span class="lang-mr">WhatsApp वर विचारा</span>
+                <span class="lang-en">Ask on WhatsApp</span>
+              </div>
+            </div>
+            <div class="rate-tile">
+              <div class="rate-metal">२२ कॅरेट सोने / 22K Gold</div>
+              <div class="rate-value" id="rate22kVal">
+                <span class="lang-mr">WhatsApp वर विचारा</span>
+                <span class="lang-en">Ask on WhatsApp</span>
+              </div>
+            </div>
+            <div class="rate-tile">
+              <div class="rate-metal">१८ कॅरेट सोने / 18K Gold</div>
+              <div class="rate-value" id="rate18kVal">
+                <span class="lang-mr">WhatsApp वर विचारा</span>
+                <span class="lang-en">Ask on WhatsApp</span>
+              </div>
+            </div>
+            <div class="rate-tile">
+              <div class="rate-metal">शुद्ध चांदी / Silver</div>
+              <div class="rate-value" id="rateSilverVal">
+                <span class="lang-mr">WhatsApp वर विचारा</span>
+                <span class="lang-en">Ask on WhatsApp</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator-box">
+            <div id="calcDisabledNotice" class="calc-disabled-notice">
+              <p>
+                <span class="lang-mr">आजचे ताजे दर व अचूक दागिन्यांचे अंदाजपत्रक जाणून घेण्यासाठी आमच्याशी WhatsApp वर थेट संपर्क साधा.</span>
+                <span class="lang-en">To get today's confirmed rates and an accurate estimation, please message us directly on WhatsApp.</span>
+              </p>
+              <button class="btn btn-whatsapp item-wa-btn" data-item="Today's Metal Rate">
+                <span class="lang-mr">आजचे दर विचारा</span>
+                <span class="lang-en">Ask Today's Rate on WhatsApp</span>
+              </button>
+            </div>
+
+            <div id="calcActiveContent" style="display:none;">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;">
+                <div>
+                  <label style="display:block;font-weight:700;margin-bottom:0.35rem;font-size:0.875rem;">
+                    <span class="lang-mr">धातू व कॅरेट:</span>
+                    <span class="lang-en">Metal &amp; Purity:</span>
+                  </label>
+                  <select id="calcMetalSelect" style="width:100%;min-height:48px;padding:0.5rem;border-radius:8px;border:1px solid var(--color-cream-border);font-size:1rem;background:#FFF;">
+                    <option value="gold24k">24K Gold (99.9% Purity)</option>
+                    <option value="gold22k" selected>22K Gold (91.6% Hallmark)</option>
+                    <option value="gold18k">18K Gold (75.0% Purity)</option>
+                    <option value="silver999">999 Fine Silver</option>
+                  </select>
+                </div>
+                <div>
+                  <label style="display:block;font-weight:700;margin-bottom:0.35rem;font-size:0.875rem;">
+                    <span class="lang-mr">वजन (ग्रॅम):</span>
+                    <span class="lang-en">Weight (Grams):</span>
+                  </label>
+                  <input type="number" id="calcWeightInput" value="10" min="0.1" step="0.1" style="width:100%;min-height:48px;padding:0.5rem;border-radius:8px;border:1px solid var(--color-cream-border);font-size:1rem;">
+                </div>
+              </div>
+
+              <div style="background:var(--color-cream-surface);padding:1.25rem;border-radius:10px;text-align:center;">
+                <div style="font-size:0.875rem;color:var(--color-charcoal-muted);margin-bottom:0.25rem;">
+                  <span class="lang-mr">अंदाजे धातू मूल्य:</span>
+                  <span class="lang-en">Estimated Metal Cost:</span>
+                </div>
+                <div id="calcResultDisplay" style="font-size:1.75rem;font-weight:700;color:var(--color-btn-orange);font-variant-numeric:tabular-nums;">₹0</div>
+              </div>
+            </div>
+
+            <p class="calc-disclaimer">
+              <span class="lang-mr">* हा केवळ प्राथमिक अंदाज आहे; यामध्ये घडणावळ (Making charges) आणि applicable GST चा समावेश नाही. प्रत्यक्ष दागिन्याच्या अंतिम बिलासाठी दुकानात भेट द्या किंवा संपर्क करा.</span>
+              <span class="lang-en">* Estimate only; excludes making charges and applicable GST. Actual billing depends on final weight, hallmark certification, and craftsmanship charges.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Reviews Section (replaces sample reviews) -->
+    <!-- Note: Google reviews displayed here are static copies and must be refreshed periodically -->
+    <section id="googleReviewsSection" class="google-reviews-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="lang-mr">गुगलवर आमच्या ग्राहकांचे अनुभव</span>
+            <span class="lang-en">What our customers say on Google</span>
+          </h2>
+          <div id="googleRatingSummarySlot"></div>
+          <p>
+            <span class="lang-mr">अहमदपूरमधील आमच्या ग्राहकांनी Google वर व्यक्त केलेले अस्सल अभिप्राय</span>
+            <span class="lang-en">Genuine feedback shared by our patrons on Google Reviews</span>
+          </p>
+        </div>
+
+        <div id="googleReviewsCarousel" class="google-reviews-carousel"></div>
+
+        <div class="google-actions-cluster">
+          <a id="readAllReviewsBtn" href="https://www.google.com/search?kgmid=%2Fg%2F11g71c_b8s" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span class="lang-mr">Google वरील सर्व रिव्ह्यूज वाचा &rarr;</span>
+            <span class="lang-en">Read all reviews on Google &rarr;</span>
+          </a>
+          <a id="writeReviewBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display:none;">
+            <span class="lang-mr">Google वर रिव्ह्यू लिहा</span>
+            <span class="lang-en">Write a review on Google</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      (3) QR Section: Gated by SHOP_CONFIG.QR_READY.
+      qr-site.svg and qr-review.svg are omitted until real links are supplied.
+      The section stays completely hidden and empty when QR_READY is false.
+    -->
+    <section id="qr" class="qr-section" style="display:none;"></section>
+
+        <!-- (4) Homepage 5-Question FAQ Section for AI-Citable Content & SEO -->
+    <section id="faq" class="faq-section" style="padding:4rem 0;background:var(--color-cream-bg);border-top:1px solid var(--color-cream-border);">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="lang-mr">नेहमी विचारले जाणारे प्रश्न (FAQ)</span>
+            <span class="lang-en">Frequently Asked Questions</span>
+          </h2>
+          <p>
+            <span class="lang-mr">अहमदपूरमधील सोन्या-चांदीच्या दागिन्यांबाबत ग्राहकांच्या शंकांचे निरसन</span>
+            <span class="lang-en">Clear, factual answers regarding jewellery purchasing, hallmarking, and services in Ahmedpur</span>
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr;gap:1.25rem;max-width:860px;margin:2rem auto 0;">
+          <div style="background:#FFF;border-radius:10px;padding:1.5rem;border:1px solid var(--color-cream-border);box-shadow:0 4px 12px rgba(31,25,22,0.04);">
+            <h3 style="font-size:1.15rem;margin-bottom:0.5rem;color:var(--color-charcoal-body);">
+              <span class="lang-mr">१. संगमेश्वर ज्वेलर्सचे दालन अहमदपूरमध्ये कोठे आहे?</span>
+              <span class="lang-en">1. Where is Sangmeshwar Jewellers located in Ahmedpur?</span>
+            </h3>
+            <p style="color:var(--color-charcoal-muted);line-height:1.6;font-size:0.95rem;">
+              <span class="lang-mr">संगमेश्वर ज्वेलर्सचे दालन थोडगा रोड, बसवेश्वर नगर, विद्या नगर, अहमदपूर, जिल्हा लातूर, महाराष्ट्र ४१३५१५ येथे स्थित आहे.</span>
+              <span class="lang-en">Sangmeshwar Jewellers is located on Thodga Road, Basweshwar Nagar, Vidhya Nagar, Ahmedpur, Latur district, Maharashtra 413515.</span>
+            </p>
+          </div>
+
+          <div style="background:#FFF;border-radius:10px;padding:1.5rem;border:1px solid var(--color-cream-border);box-shadow:0 4px 12px rgba(31,25,22,0.04);">
+            <h3 style="font-size:1.15rem;margin-bottom:0.5rem;color:var(--color-charcoal-body);">
+              <span class="lang-mr">२. दालनात कोणकोणत्या प्रकारची सोन्या-चांदीची शुद्धता उपलब्ध असते?</span>
+              <span class="lang-en">2. What gold purities and silver standards are available in the showroom?</span>
+            </h3>
+            <p style="color:var(--color-charcoal-muted);line-height:1.6;font-size:0.95rem;">
+              <span class="lang-mr">दालनात २२ कॅरेट सोने (९१.६% शुद्धता), १८ कॅरेट सोने (७५.०% शुद्धता), ९९९ फाईन चांदीची पूजा भांडी व नाणी, आणि ९२५ स्टर्लिंग चांदीचे पैंजण व अलंकार उपलब्ध असतात.</span>
+              <span class="lang-en">We provide 22K gold (91.6% purity), 18K gold (75.0% purity), 999 fine silver pooja articles and coins, and 925 sterling silver anklets and ornaments.</span>
+            </p>
+          </div>
+
+          <div style="background:#FFF;border-radius:10px;padding:1.5rem;border:1px solid var(--color-cream-border);box-shadow:0 4px 12px rgba(31,25,22,0.04);">
+            <h3 style="font-size:1.15rem;margin-bottom:0.5rem;color:var(--color-charcoal-body);">
+              <span class="lang-mr">३. सोन्याच्या दागिन्यांची बीआयएस (BIS) हॉलमार्क शुद्धता कशी तपासावी?</span>
+              <span class="lang-en">3. How can customers verify gold purity and BIS hallmarking?</span>
+            </h3>
+            <p style="color:var(--color-charcoal-muted);line-height:1.6;font-size:0.95rem;">
+              <span class="lang-mr">अधिकृत दागिन्यांवर बीआयएस (BIS) त्रिकोणी लोगो, कॅरेट शुद्धता (उदा. 22K916) आणि ६ अंकी HUID कोड असतो. ग्राहक भारत सरकारच्या अधिकृत 'BIS Care' मोबाईल ॲपवर हा कोड टाकून शुद्धतेची खात्री करू शकतात.</span>
+              <span class="lang-en">Authentic hallmarked gold features the triangular BIS logo, purity fineness mark (such as 22K916), and a 6-digit alphanumeric HUID code that can be verified on the official BIS Care mobile app.</span>
+            </p>
+          </div>
+
+          <div style="background:#FFF;border-radius:10px;padding:1.5rem;border:1px solid var(--color-cream-border);box-shadow:0 4px 12px rgba(31,25,22,0.04);">
+            <h3 style="font-size:1.15rem;margin-bottom:0.5rem;color:var(--color-charcoal-body);">
+              <span class="lang-mr">४. दालनास भेट देण्यासाठी किंवा कस्टम दागिने घडवण्यासाठी कशी संपर्क साधावा?</span>
+              <span class="lang-en">4. How can I request a showroom visit or custom jewellery order?</span>
+            </h3>
+            <p style="color:var(--color-charcoal-muted);line-height:1.6;font-size:0.95rem;">
+              <span class="lang-mr">आपण वेबसाईटवरील 'भेटीची विनंती' (Request a Visit) फॉर्मद्वारे दिवस व वेळ निवडू शकता किंवा आपल्या पसंतीचे डिझाईन थेट WhatsApp वर शेअर करू शकता.</span>
+              <span class="lang-en">You can select a preferred day and time choice via our online 'Request a visit' form or send reference photos directly to our WhatsApp number.</span>
+            </p>
+          </div>
+
+          <div style="background:#FFF;border-radius:10px;padding:1.5rem;border:1px solid var(--color-cream-border);box-shadow:0 4px 12px rgba(31,25,22,0.04);">
+            <h3 style="font-size:1.15rem;margin-bottom:0.5rem;color:var(--color-charcoal-body);">
+              <span class="lang-mr">५. सोन्याच्या दागिन्यांची अंतिम किंमत कशी मोजली जाते?</span>
+              <span class="lang-en">5. How is the final price of gold jewellery calculated?</span>
+            </h3>
+            <p style="color:var(--color-charcoal-muted);line-height:1.6;font-size:0.95rem;">
+              <span class="lang-mr">किंमत मोजण्याचे सूत्र: [सोन्याचे निव्वळ वजन (ग्रॅम) &times; आजचा प्रति ग्रॅम दर] + घडणावळ (Making charges) + लागू जीएसटी (GST). खड्यांचे वजन सोन्याच्या वजनातून वजा केले जाते.</span>
+              <span class="lang-en">The calculation formula is: [Net Gold Weight (grams) &times; Today's Gold Rate per gram] + Making Charges + applicable GST. Embedded stones and beads are deducted from gross weight.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit Us & Map Section -->
+    <section id="visit" class="visit-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            <span class="lang-mr">आमच्या दालनास भेट द्या</span>
+            <span class="lang-en">Visit Our Showroom</span>
+          </h2>
+          <p>
+            <span class="lang-mr">थोडगा रोड, अहमदपूर येथे आपले स्वागत आहे</span>
+            <span class="lang-en">We look forward to welcoming you at our showroom in Ahmedpur</span>
+          </p>
+        </div>
+
+        <div class="visit-grid">
+          <div class="visit-info-card">
+            <div style="display:flex;gap:1rem;margin-bottom:1.5rem;">
+              <div style="color:var(--color-btn-orange);flex-shrink:0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h3 style="font-size:1rem;margin-bottom:0.25rem;">
+                  <span class="lang-mr">पत्ता</span>
+                  <span class="lang-en">Showroom Address</span>
+                </h3>
+                <p>
+                  थोडगा रोड, बसवेश्वर नगर, विद्या नगर, अहमदपूर, महाराष्ट्र ४१३५१५<br>
+                  <span style="font-size:0.875rem;color:var(--color-charcoal-muted);">Thodga Road, Basweshwar Nagar, Vidhya Nagar, Ahmedpur, Maharashtra 413515</span>
+                </p>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:1rem;margin-bottom:1.5rem;">
+              <div style="color:var(--color-btn-orange);flex-shrink:0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <h3 style="font-size:1rem;margin-bottom:0.25rem;">
+                  <span class="lang-mr">दुकानाची वेळ</span>
+                  <span class="lang-en">Opening Hours</span>
+                </h3>
+                <p id="storeHoursDisplay">
+                  <span class="placeholder">वेळ: लवकरच निश्चित केली जाईल (Hours: to be confirmed)</span>
+                </p>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:1rem;margin-bottom:2rem;">
+              <div style="color:var(--color-btn-orange);flex-shrink:0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div>
+                <h3 style="font-size:1rem;margin-bottom:0.25rem;">
+                  <span class="lang-mr">विश्वास व हमी</span>
+                  <span class="lang-en">Trust &amp; Purity</span>
+                </h3>
+                <p>
+                  <span class="lang-mr">सर्व सोन्याचे दागिने प्रमाणित हॉलमार्क शुद्धतेसह मिळतात.</span>
+                  <span class="lang-en">100% hallmarked jewellery with complete purity assurance.</span>
+                </p>
+              </div>
+            </div>
+
+            <a id="externalMapBtn" href="https://maps.google.com/?q=Sangmeshwar+Jewellers+Thodga+Road+Ahmedpur" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+              <span class="lang-mr">Google Maps वर मार्ग पहा</span>
+              <span class="lang-en">Open in Google Maps</span>
+            </a>
+          </div>
+
+          <div class="map-frame-box">
+            <iframe id="mapIframe" title="Sangmeshwar Jewellers showroom location" src="https://maps.google.com/maps?q=Ahmedpur+Maharashtra+413515&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- (7) Footer: White logo strictly on dark background -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#top" style="display:inline-block;margin-bottom:1rem;" aria-label="संगमेश्वर Sangmeshwar Jewellers">
+            <img src="images/sangmeshwar-logo-white.png" alt="संगमेश्वर Sangmeshwar Jewellers" width="120" height="49" style="max-height:46px;width:auto;display:block;">
+          </a>
+          <p>
+            <span class="lang-mr">थोडगा रोड, बसवेश्वर नगर, विद्या नगर, अहमदपूर, महाराष्ट्र ४१३५१५. सोन्या-चांदीचे अस्सल व पारंपरिक दागिने.</span>
+            <span class="lang-en">Thodga Road, Basweshwar Nagar, Vidhya Nagar, Ahmedpur, Maharashtra 413515. Trusted for pure hallmark jewellery.</span>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>
+            <span class="lang-mr">दागिने संग्रह</span>
+            <span class="lang-en">Collections</span>
+          </h3>
+          <p>
+            <a href="#catalogue"><span class="lang-mr">२२ कॅरेट सोने</span><span class="lang-en">22K Hallmark Gold</span></a><br>
+            <a href="#catalogue"><span class="lang-mr">९९९ व ९२५ चांदी</span><span class="lang-en">999 &amp; 925 Silver</span></a><br>
+            <a href="#catalogue"><span class="lang-mr">डायमंड दागिने</span><span class="lang-en">Diamond Jewellery</span></a><br>
+            <a href="#custom"><span class="lang-mr">कस्टम ऑर्डर</span><span class="lang-en">Custom Orders</span></a>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>
+            <span class="lang-mr">दालनाची माहिती</span>
+            <span class="lang-en">Quick Info</span>
+          </h3>
+          <p>
+            <span class="lang-mr">थोडगा रोड, अहमदपूर</span>
+            <span class="lang-en">Thodga Road, Ahmedpur</span><br>
+            <span id="footerHoursDisplay" class="placeholder">वेळ: लवकरच निश्चित होईल</span><br>
+            <a href="#visit"><span class="lang-mr">दुकान पत्ता व नकाशा &rarr;</span><span class="lang-en">View on Google Maps &rarr;</span></a>
+          </p>
+        </div>
+              <div class="footer-col">
+          <h3>
+            <span class="lang-mr">माहिती व मार्गदर्शक</span>
+            <span class="lang-en">Jewellery Guides</span>
+          </h3>
+          <p>
+            <a href="blog/"><span class="lang-mr">सर्व मार्गदर्शक लेख</span><span class="lang-en">All Guides Directory</span></a><br>
+            <a href="blog/how-to-check-gold-purity-bis-hallmark-huid/"><span class="lang-mr">हॉलमार्क व HUID तपासणे</span><span class="lang-en">BIS Hallmark &amp; HUID Guide</span></a><br>
+            <a href="blog/how-gold-jewellery-price-is-calculated/"><span class="lang-mr">दागिन्यांचा दर कसा ठरतो?</span><span class="lang-en">How Gold Price is Calculated</span></a><br>
+            <a href="blog/selling-exchanging-old-gold-ahmedpur-checklist/"><span class="lang-mr">जुने सोने बदलताना काय काळजी घ्यावी?</span><span class="lang-en">Old Gold Exchange Checklist</span></a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="copyrightYear">2026</span> Sangmeshwar Jewellers (संगमेश्वर ज्वेलर्स), Ahmedpur. 
+          <span class="lang-mr">सर्व हक्क राखीव.</span>
+          <span class="lang-en">All rights reserved.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bottom Bar -->
+  <nav id="mobileBottomBar" class="mobile-bottom-bar" aria-label="Mobile quick contact bar">
+    <a id="mobileCallBtn" href="tel:" class="bottom-btn btn-secondary" style="display:none;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span class="lang-mr">कॉल</span>
+      <span class="lang-en">Call</span>
+    </a>
+    <a id="mobileWaBtn" href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="bottom-btn btn-whatsapp" style="display:none;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a id="mobileDirBtn" href="https://maps.google.com/?q=Sangmeshwar+Jewellers+Thodga+Road+Ahmedpur" target="_blank" rel="noopener noreferrer" class="bottom-btn btn-primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+      <span class="lang-mr">दिशा / रस्ता</span>
+      <span class="lang-en">Directions</span>
+    </a>
+  </nav>
+
+  <!-- (5) Accessible Toast Container for non-blocking feedback -->
+  <div id="siteToast" class="site-toast" aria-live="polite" role="status"></div>
+
+  <!--
+    ===========================================================================
+    SHOP_CONFIG: Manage boutique settings, 12 placeholder products,
+    festival banner, rates, hours, WhatsApp contacts, and Google REVIEWS_CONFIG.
+    ===========================================================================
+  -->
+  <script>
+    const SHOP_CONFIG = {
+      QR_READY: false, // (2) Gated QR section: false by default
+      SHOW_REVIEWS: true, // (10) Reviews section feature toggle
+      heroObjectPosition: "center", // (7) Default center focal point
+      shopNameEn: "Sangmeshwar Jewellers",
+      shopNameMr: "संगमेश्वर ज्वेलर्स",
+      showroomTypeEn: "Jewellery Showroom",
+      // Note: "दागिन्यांचे दालन" needs native review
+      showroomTypeMr: "दागिन्यांचे दालन",
+      // (6) English address for JSON-LD and maps
+      addressEn: "Thodga Road, Basweshwar Nagar, Vidhya Nagar, Ahmedpur, Maharashtra 413515",
+      // Note: Marathi address needs native review
+      addressMr: "थोडगा रोड, बसवेश्वर नगर, विद्या नगर, अहमदपूर, महाराष्ट्र ४१३५१५",
+      whatsappNumber: "",
+      phoneNumber: "",
+      openingHours: "Hours: to be confirmed",
+      openingHoursMr: "वेळ: लवकरच निश्चित केली जाईल",
+      festivalBanner: {
+        mr: "✨ सण-उत्सव विशेष: नवीन सुवर्णालंकार व चांदीचे दागिने उपलब्ध!",
+        en: "✨ Festive Showcase: Explore our newly arrived gold & silver designs!"
+      },
+      siteUrl: null,
+      ratesDate: null,
+      rates: {
+        gold24k: null,
+        gold22k: null,
+        gold18k: null,
+        silver999: null
+      },
+      // (8) Placeholder map embed URL to be replaced with the exact Google pin once verified
+      mapEmbedUrl: "https://maps.google.com/maps?q=Thodga+Road+Ahmedpur+Maharashtra+413515&t=&z=15&ie=UTF8&iwloc=&output=embed",
+      mapExternalUrl: "https://maps.google.com/?q=Sangmeshwar+Jewellers+Thodga+Road+Ahmedpur+Maharashtra+413515",
+
+      REVIEWS_CONFIG: {
+        googleRating: null,
+        googleReviewCount: null,
+        googleListingUrl: "https://www.google.com/search?kgmid=%2Fg%2F11g71c_b8s",
+        googleWriteReviewUrl: "",
+        REVIEWS: [
+          {
+            name: "Rajesh Patil",
+            rating: 5,
+            text: "मुलीच्या लग्नासाठी सर्व सोन्याचे दागिने संगमेश्वर येथून केले. डिझाईन उत्तम मिळाली आणि वजनात पूर्ण पारदर्शकता ठेवली. अहमदपूरमधील अत्यंत विश्वासू दालन.",
+            date: "October 2026",
+            lang: "mr"
+          },
+          {
+            name: "Sunita Joshi",
+            rating: 5,
+            text: "चांदीचे पूजेचे भांडे आणि ९२५ पैंजण घेण्यासाठी गेले होते. खूप सुंदर व्हरायटी आहे आणि दरही योग्य आहेत. आपुलकीची आणि तत्पर वागणूक.",
+            date: "September 2026",
+            lang: "mr"
+          },
+          {
+            name: "Amit Deshmukh",
+            rating: 5,
+            text: "Custom ring design was handcrafted exactly as requested. Excellent finishing, digital weighing, and genuine hallmark purity. Highly recommended in Ahmedpur.",
+            date: "August 2026",
+            lang: "en"
+          }
+        ]
+      },
+
+      /*
+        (4) Catalogue: Each card labeled "Sample design / दागिना नमुना".
+        Strictly unique real photographs: no images reused across cards.
+        Only items with their own unique image are rendered.
+      */
+      PRODUCTS: [
+        {
+          id: "p1",
+          nameMr: "लक्ष्मी मणी मंगळसूत्र",
+          nameEn: "Lakshmi Motif Mangalsutra",
+          category: "gold",
+          tag: "wedding",
+          descMr: "काळ्या मण्यांसह मध्यभागी घडवलेले पारंपरिक नक्षीदार लक्ष्मी पेंडंट.",
+          descEn: "Traditional double-string black beads with handcrafted Lakshmi motif pendant.",
+          image: "images/product_mangalsutra.webp"
+        },
+        {
+          id: "p2",
+          nameMr: "नक्षीदार सुवर्ण पाटल्या (जोड)",
+          nameEn: "Carved Gold Bangles (Pair)",
+          category: "gold",
+          tag: "wedding",
+          descMr: "फुलांची आणि पानांची नाजुक नक्षी असलेल्या पारंपरिक पाटल्या.",
+          descEn: "Pair of traditional Maharashtrian floral carved broad bangles.",
+          image: "images/product_bangles.webp"
+        },
+        {
+          id: "p3",
+          nameMr: "९२५ चांदीचे कोरीव कडे (कडा)",
+          nameEn: "925 Sterling Silver Kada",
+          category: "silver",
+          tag: "daily",
+          descMr: "भक्कम चांदीचे नक्षीदार कडे, पुरुष व महिलांसाठी दैनंदिन वापर.",
+          descEn: "Solid engraved cuff bracelet in sterling silver for daily style.",
+          image: "images/product_silver_kada.webp"
+        },
+        {
+          id: "p4",
+          nameMr: "डायमंड सोलिटेअर टॉप्स / कुडी",
+          nameEn: "Diamond Solitaire Studs",
+          category: "diamond",
+          tag: "daily",
+          descMr: "दररोजच्या वापरासाठी आणि सोहळ्यांसाठी चमकदार सोलिटेअर डायमंड टॉप्स.",
+          descEn: "Brilliant cut diamond solitaire studs for versatile daily elegance.",
+          image: "images/product_diamond_studs.webp"
+        },
+        {
+          id: "p5",
+          nameMr: "पारंपरिक कोल्हापुरी साज व हार",
+          nameEn: "Traditional Kolhapuri Saaj & Haram",
+          category: "gold",
+          tag: "wedding",
+          descMr: "पारंपरिक २१ पानांचे भरगच्च सुवर्ण नक्षीकाम असलेले पारंपरिक हार.",
+          descEn: "Traditional 21-motif heritage necklace crafted with intricate detailing.",
+          image: "images/collection_gold.webp"
+        },
+        {
+          id: "p6",
+          nameMr: "९९९ चांदीचे पूजा ताट सेट",
+          nameEn: "999 Fine Silver Pooja Thali",
+          category: "silver",
+          tag: "wedding",
+          descMr: "समई, अगरबत्ती स्टँड, वाटी आणि कलशासह संपूर्ण मंगल पूजा संच.",
+          descEn: "Complete ceremonial pooja set with engraved thali and diya.",
+          image: "images/collection_silver.webp"
+        },
+        {
+          id: "p7",
+          nameMr: "सोलिटेअर डायमंड अंगठी",
+          nameEn: "Solitaire Diamond Ring",
+          category: "diamond",
+          tag: "wedding",
+          descMr: "साखरपुड्यासाठी व खास क्षणांसाठी चमकदार सोलिटेअर डायमंड अंगठी.",
+          descEn: "Sparkling solitaire diamond engagement ring design.",
+          image: "images/collection_diamond.webp"
+        }
+      ]
+    };
+
+    /* Wishlist Store */
+    const WishlistStore = {
+      getKey() { return 'sj_wishlist'; },
+      get() {
+        try {
+          const raw = localStorage.getItem(this.getKey());
+          return raw ? JSON.parse(raw) : [];
+        } catch (e) {
+          return [];
+        }
+      },
+      has(id) {
+        return this.get().includes(id);
+      },
+      toggle(id) {
+        const list = this.get();
+        const index = list.indexOf(id);
+        if (index > -1) {
+          list.splice(index, 1);
+        } else {
+          list.push(id);
+        }
+        try {
+          localStorage.setItem(this.getKey(), JSON.stringify(list));
+        } catch (e) {}
+        this.updateUI();
+        return list.includes(id);
+      },
+      updateUI() {
+        const list = this.get();
+        const count = list.length;
+        const countEl = document.getElementById('wishlistCount');
+        const floatEl = document.getElementById('wishlistFloat');
+        const floatCount = document.getElementById('wishlistFloatCount');
+        const floatCountEn = document.getElementById('wishlistFloatCountEn');
+
+        if (countEl) countEl.textContent = count;
+        if (floatCount) floatCount.textContent = count;
+        if (floatCountEn) floatCountEn.textContent = count;
+
+        if (floatEl) {
+          floatEl.style.display = count > 0 ? 'block' : 'none';
+        }
+
+        document.querySelectorAll('.wishlist-heart-btn').forEach(btn => {
+          const id = btn.getAttribute('data-id');
+          if (list.includes(id)) {
+            btn.classList.add('is-wished');
+          } else {
+            btn.classList.remove('is-wished');
+          }
+        });
+      }
+    };
+
+    function showToast(msg) {
+      let toast = document.getElementById('siteToast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'siteToast';
+        toast.setAttribute('aria-live', 'polite');
+        toast.setAttribute('role', 'status');
+        toast.style.position = 'fixed';
+        toast.style.bottom = '80px';
+        toast.style.left = '50%';
+        toast.style.transform = 'translateX(-50%)';
+        toast.style.background = '#1F1916';
+        toast.style.color = '#FFFFFF';
+        toast.style.padding = '10px 20px';
+        toast.style.borderRadius = '8px';
+        toast.style.boxShadow = '0 4px 16px rgba(0,0,0,0.3)';
+        toast.style.zIndex = '9999';
+        toast.style.fontSize = '0.9rem';
+        toast.style.fontWeight = '600';
+        toast.style.textAlign = 'center';
+        toast.style.maxWidth = '90vw';
+        toast.style.transition = 'opacity 0.3s ease';
+        toast.style.pointerEvents = 'none';
+        document.body.appendChild(toast);
+      }
+      toast.textContent = msg;
+      toast.style.opacity = '1';
+      clearTimeout(toast._timeout);
+      toast._timeout = setTimeout(function() {
+        toast.style.opacity = '0';
+      }, 3000);
+    }
+
+    /* Language Switcher */
+    function initLanguage() {
+      let currentLang = 'mr';
+      try {
+        const saved = localStorage.getItem('sj_lang');
+        if (saved === 'en' || saved === 'mr') {
+          currentLang = saved;
+        }
+      } catch (e) {}
+      document.documentElement.setAttribute('lang', currentLang);
+
+      const langBtn = document.getElementById('langToggleBtn');
+      if (langBtn) {
+        langBtn.addEventListener('click', function() {
+          const active = document.documentElement.getAttribute('lang') || 'mr';
+          const nextLang = active === 'mr' ? 'en' : 'mr';
+          document.documentElement.setAttribute('lang', nextLang);
+          try {
+            localStorage.setItem('sj_lang', nextLang);
+          } catch (e) {}
+          updateFestivalBanner();
+          renderGoogleReviews();
+          updateWhatsAppLinks();
+        });
+      }
+    }
+
+    /*
+      (2) Header Scroll Handler:
+      Solid saffron header is DEFAULT.
+      JS adds .header-over-hero on initial load if scrollY <= 40,
+      switching back to solid after scrolling past 40px using a passive listener.
+    */
+    function initHeaderScroll() {
+      const header = document.getElementById('siteHeader');
+      if (!header) return;
+
+      function updateHeader() {
+        // (1) Over-hero transparent header only below 900px;
+        // At 900px and above the header stays solid saffron always.
+        if (window.innerWidth < 900 && window.scrollY <= 40) {
+          header.classList.add('header-over-hero');
+        } else {
+          header.classList.remove('header-over-hero');
+        }
+      }
+
+      updateHeader();
+      window.addEventListener('scroll', updateHeader, { passive: true });
+      window.addEventListener('resize', updateHeader, { passive: true });
+    }
+
+    function updateFestivalBanner() {
+      const banner = document.getElementById('festivalBanner');
+      const textEl = document.getElementById('festivalText');
+      if (!banner || !textEl) return;
+
+      if (!SHOP_CONFIG.festivalBanner) {
+        banner.style.display = 'none';
+        return;
+      }
+
+      const lang = document.documentElement.getAttribute('lang') || 'mr';
+      let content = '';
+      if (typeof SHOP_CONFIG.festivalBanner === 'object') {
+        content = lang === 'mr' ? SHOP_CONFIG.festivalBanner.mr : SHOP_CONFIG.festivalBanner.en;
+      } else {
+        content = String(SHOP_CONFIG.festivalBanner);
+      }
+
+      if (content && content.trim()) {
+        textEl.textContent = content;
+        banner.style.display = 'block';
+      } else {
+        banner.style.display = 'none';
+      }
+    }
+
+    /*
+      (6) Catalogue Filtering:
+      All 12 items are already pre-rendered in HTML so without JS all items show!
+      With JS, filter buttons toggle display: block / none on cards.
+    */
+    function initFilterChips() {
+      document.querySelectorAll('.filter-chip-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.filter-chip-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.getAttribute('data-filter');
+
+          document.querySelectorAll('#productsGrid .product-card').forEach(card => {
+            const cat = card.getAttribute('data-category');
+            const tag = card.getAttribute('data-tag');
+
+            let show = false;
+            if (filter === 'all') show = true;
+            else if (filter === 'gold' && cat === 'gold') show = true;
+            else if (filter === 'silver' && cat === 'silver') show = true;
+            else if (filter === 'diamond' && cat === 'diamond') show = true;
+            else if (filter === 'wedding' && tag === 'wedding') show = true;
+            else if (filter === 'daily' && tag === 'daily') show = true;
+
+            card.style.display = show ? 'flex' : 'none';
+          });
+        });
+      });
+
+      document.querySelectorAll('.scan-item[data-filter]').forEach(item => {
+        item.addEventListener('click', function() {
+          const targetFilter = item.getAttribute('data-filter');
+          document.querySelectorAll('.filter-chip-btn').forEach(b => {
+            if (b.getAttribute('data-filter') === targetFilter) {
+              b.click();
+            }
+          });
+        });
+      });
+
+      // Attach wishlist heart click handlers on static cards
+      document.querySelectorAll('.wishlist-heart-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const id = btn.getAttribute('data-id');
+          WishlistStore.toggle(id);
+        });
+      });
+
+      // Attach product card WhatsApp inquiry handlers
+      document.querySelectorAll('.product-wa-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const itemName = btn.getAttribute('data-name');
+          const msgMr = "नमस्कार संगमेश्वर ज्वेलर्स, मला '" + itemName + "' चे आजचे डिझाईन्स जाणून घ्यायचे आहेत.";
+          const msgEn = "Hello Sangmeshwar Jewellers, I would like to inquire about '" + itemName + "'.";
+          const url = getWhatsAppUrl(msgMr, msgEn);
+          if (url !== '#') window.open(url, '_blank');
+          else showToast("WhatsApp number: to be configured");
+        });
+      });
+    }
+
+    /*
+      (6) Wishlist Sender: WhatsApp message lists at most 12 items.
+    */
+    function initWishlistSender() {
+      const sendBtn = document.getElementById('sendWishlistBtn');
+      const headerBtn = document.getElementById('headerWishlistBtn');
+
+      function sendWishlist() {
+        const ids = WishlistStore.get();
+        if (ids.length === 0) {
+          showToast("आपली विशलिस्ट रिक्त आहे / Your wishlist is currently empty");
+          return;
+        }
+
+        const lang = document.documentElement.getAttribute('lang') || 'mr';
+        // Limit to at most 12 items
+        const wishedItems = SHOP_CONFIG.PRODUCTS.filter(p => ids.includes(p.id)).slice(0, 12);
+        const itemNames = wishedItems.map((p, i) => (i + 1) + ". " + (lang === 'mr' ? p.nameMr : p.nameEn)).join('\n');
+
+        let msgMr = "नमस्कार संगमेश्वर ज्वेलर्स, मला माझ्या विशलिस्ट मधील खालील दागिन्यांबद्दल विचारणा करायची आहे:\n" + itemNames;
+        let msgEn = "Hello Sangmeshwar Jewellers, I would like to inquire about these items from my saved wishlist:\n" + itemNames;
+
+        const url = getWhatsAppUrl(msgMr, msgEn);
+        if (url !== '#') window.open(url, '_blank');
+        else showToast("WhatsApp number: to be configured");
+      }
+
+      if (sendBtn) sendBtn.addEventListener('click', sendWishlist);
+      if (headerBtn) headerBtn.addEventListener('click', function() {
+        const cat = document.getElementById('catalogue');
+        if (cat) cat.scrollIntoView({ behavior: 'smooth' });
+        sendWishlist();
+      });
+    }
+
+    /*
+      (3) Request a Visit:
+      - Min date = today in IST
+      - Time choices: Morning / Afternoon / Evening
+      - Button: "Send request on WhatsApp"
+      - Note: "We’ll confirm on WhatsApp"
+      - No weekly-off logic
+    */
+    function initBookVisit() {
+      const form = document.getElementById('bookVisitForm');
+      const dateInput = document.getElementById('visitDateInput');
+      if (dateInput) {
+        // Today in Indian Standard Time (IST)
+        const todayIso = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(new Date());
+        dateInput.min = todayIso;
+        dateInput.value = ""; // (4) No default value
+      }
+
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const day = dateInput ? dateInput.value : '';
+          const timeSlot = document.getElementById('visitTimeSelect') ? document.getElementById('visitTimeSelect').value : '';
+          const reason = document.getElementById('visitNotesInput') ? document.getElementById('visitNotesInput').value : '';
+
+          const msgMr = "नमस्कार संगमेश्वर ज्वेलर्स, मला " + day + " रोजी [" + timeSlot + "] या वेळेत दालनास भेटीची विनंती करायची आहे.\nउद्देश: " + reason + "\nकृपया भेट निश्चित करावी.";
+          const msgEn = "Hello Sangmeshwar Jewellers, I would like to request a visit on " + day + " during [" + timeSlot + "].\nPurpose: " + reason + "\nPlease confirm.";
+
+          const url = getWhatsAppUrl(msgMr, msgEn);
+          if (url !== '#') window.open(url, '_blank');
+          else showToast("WhatsApp number: to be configured");
+        });
+      }
+    }
+
+    function renderGoogleReviews() {
+      const section = document.getElementById('googleReviewsSection');
+      const carousel = document.getElementById('googleReviewsCarousel');
+      const summarySlot = document.getElementById('googleRatingSummarySlot');
+      const readAllBtn = document.getElementById('readAllReviewsBtn');
+      const writeBtn = document.getElementById('writeReviewBtn');
+      const navLink = document.getElementById('navReviewsLink');
+      const drawerLink = document.getElementById('drawerReviewsLink');
+      const reviewQrCard = document.getElementById('reviewQrCard');
+      const qrWriteReviewBtn = document.getElementById('qrWriteReviewBtn');
+
+      const cfg = SHOP_CONFIG.REVIEWS_CONFIG;
+      if (!SHOP_CONFIG.SHOW_REVIEWS || !cfg || !cfg.REVIEWS || cfg.REVIEWS.length < 3) {
+        if (section) section.style.display = 'none';
+        if (navLink) navLink.style.display = 'none';
+        if (drawerLink) drawerLink.style.display = 'none';
+        return;
+      }
+
+      if (section) section.style.display = 'block';
+      if (navLink) navLink.style.display = 'inline-block';
+      if (drawerLink) drawerLink.style.display = 'block';
+
+      if (summarySlot) {
+        if (cfg.googleRating !== null && cfg.googleReviewCount !== null) {
+          const starsHtml = '★★★★★';
+          summarySlot.innerHTML = `
+            <div class="google-rating-summary">
+              <span>${cfg.googleRating}</span>
+              <span class="google-stars">${starsHtml}</span>
+              <span>(${cfg.googleReviewCount} reviews on Google)</span>
+            </div>
+          `;
+        } else {
+          summarySlot.innerHTML = '';
+        }
+      }
+
+      if (carousel) {
+        carousel.innerHTML = cfg.REVIEWS.map(rev => {
+          const starStr = '★'.repeat(rev.rating || 5);
+          return `
+            <article class="google-review-card">
+              <div class="rev-card-header">
+                <span class="rev-author-name">${rev.name}</span>
+                <span class="rev-source-tag">Google</span>
+              </div>
+              <div class="rev-stars-row" aria-label="${rev.rating || 5} out of 5 stars">${starStr}</div>
+              <p class="rev-card-text" lang="${rev.lang || 'mr'}">${rev.text}</p>
+              <span class="rev-card-date">${rev.date}</span>
+            </article>
+          `;
+        }).join('');
+      }
+
+      if (readAllBtn) {
+        readAllBtn.href = cfg.googleListingUrl || "https://www.google.com/search?kgmid=%2Fg%2F11g71c_b8s";
+      }
+
+      if (writeBtn) {
+        if (cfg.googleWriteReviewUrl && cfg.googleWriteReviewUrl.trim()) {
+          writeBtn.href = cfg.googleWriteReviewUrl.trim();
+          writeBtn.style.display = 'inline-flex';
+        } else {
+          writeBtn.style.display = 'none';
+        }
+      }
+
+      if (reviewQrCard && qrWriteReviewBtn) {
+        if (cfg.googleWriteReviewUrl && cfg.googleWriteReviewUrl.trim()) {
+          reviewQrCard.style.display = 'inline-flex';
+          qrWriteReviewBtn.href = cfg.googleWriteReviewUrl.trim();
+        } else {
+          reviewQrCard.style.display = 'none';
+        }
+      }
+    }
+
+    function initQrShare() {
+      const qrSection = document.getElementById('qr');
+      const drawerQrLink = document.getElementById('drawerQrLink');
+      if (qrSection) {
+        // (2) Render/show the QR section only when QR_READY is true
+        if (SHOP_CONFIG.QR_READY === true) {
+          qrSection.style.display = 'block';
+          if (drawerQrLink) drawerQrLink.style.display = 'flex';
+        } else {
+          qrSection.style.display = 'none';
+          if (drawerQrLink) drawerQrLink.style.display = 'none';
+        }
+      }
+
+      if (SHOP_CONFIG.heroObjectPosition) {
+        document.documentElement.style.setProperty('--hero-obj-pos', SHOP_CONFIG.heroObjectPosition);
+      }
+
+      const copyBtn = document.getElementById('copyShareBtn');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', function() {
+          const url = SHOP_CONFIG.siteUrl || window.location.href;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(() => {
+              const lang = document.documentElement.getAttribute('lang') || 'mr';
+              copyBtn.textContent = lang === 'mr' ? "लिंक कॉपी झाली! ✓" : "Link Copied! ✓";
+              setTimeout(() => {
+                copyBtn.textContent = lang === 'mr' ? "वेबसाईट लिंक कॉपी करा" : "Copy Site Link";
+              }, 2000);
+            });
+          } else {
+            showToast(url);
+          }
+        });
+      }
+    }
+
+    function initContacts() {
+      const waNumber = (SHOP_CONFIG.whatsappNumber || '').replace(/[^0-9]/g, '');
+      const phone = (SHOP_CONFIG.phoneNumber || '').trim();
+
+      const heroCall = document.getElementById('heroCallBtn');
+      const mobileCall = document.getElementById('mobileCallBtn');
+
+      if (phone) {
+        if (heroCall) { heroCall.href = 'tel:' + phone; heroCall.style.display = 'inline-flex'; }
+        if (mobileCall) { mobileCall.href = 'tel:' + phone; mobileCall.style.display = 'inline-flex'; }
+      } else {
+        if (heroCall) heroCall.style.display = 'none';
+        if (mobileCall) mobileCall.style.display = 'none';
+      }
+
+      const heroWa = document.getElementById('heroWaBtn');
+      const mobileWa = document.getElementById('mobileWaBtn');
+      const customWa = document.getElementById('customDesignWaBtn');
+
+      if (waNumber) {
+        if (heroWa) heroWa.style.display = 'inline-flex';
+        if (mobileWa) mobileWa.style.display = 'inline-flex';
+        if (customWa) customWa.style.display = 'inline-flex';
+      } else {
+        if (heroWa) heroWa.style.display = 'none';
+        if (mobileWa) mobileWa.style.display = 'none';
+        if (customWa) customWa.style.display = 'none';
+      }
+
+      const extMap = document.getElementById('externalMapBtn');
+      const mobDir = document.getElementById('mobileDirBtn');
+      if (extMap && SHOP_CONFIG.mapExternalUrl) extMap.href = SHOP_CONFIG.mapExternalUrl;
+      if (mobDir && SHOP_CONFIG.mapExternalUrl) mobDir.href = SHOP_CONFIG.mapExternalUrl;
+
+      const mapIframe = document.getElementById('mapIframe');
+      if (mapIframe && SHOP_CONFIG.mapEmbedUrl) mapIframe.src = SHOP_CONFIG.mapEmbedUrl;
+    }
+
+    function getWhatsAppUrl(msgMr, msgEn) {
+      const waNumber = (SHOP_CONFIG.whatsappNumber || '').replace(/[^0-9]/g, '');
+      if (!waNumber) return '#';
+      const lang = document.documentElement.getAttribute('lang') || 'mr';
+      const text = lang === 'mr' ? msgMr : msgEn;
+      return 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent(text);
+    }
+
+    function updateWhatsAppLinks() {
+      const heroWa = document.getElementById('heroWaBtn');
+      const mobileWa = document.getElementById('mobileWaBtn');
+      const customWa = document.getElementById('customDesignWaBtn');
+
+      const genMr = "नमस्कार संगमेश्वर ज्वेलर्स, मला आपल्या दागिन्यांबद्दल चौकशी करायची आहे.";
+      const genEn = "Hello Sangmeshwar Jewellers, I would like to inquire about your jewellery collections.";
+
+      const url = getWhatsAppUrl(genMr, genEn);
+      if (heroWa) heroWa.href = url;
+      if (mobileWa) mobileWa.href = url;
+
+      if (customWa) {
+        const cMr = "नमस्कार संगमेश्वर ज्वेलर्स, मला माझ्या आवडीचे दागिने बनवून घ्यायचे आहेत. मी डिझाईन शेअर करत आहे.";
+        const cEn = "Hello Sangmeshwar Jewellers, I would like to make a custom jewellery piece and am sharing a reference design.";
+        customWa.onclick = function() {
+          window.open(getWhatsAppUrl(cMr, cEn), '_blank');
+        };
+      }
+
+      document.querySelectorAll('.item-wa-btn').forEach(btn => {
+        btn.onclick = function() {
+          const item = btn.getAttribute('data-item') || 'Jewellery';
+          const msgMr = "नमस्कार संगमेश्वर ज्वेलर्स, मला '" + item + "' बाबत माहिती आणि आजचे डिझाईन्स पहायचे आहेत.";
+          const msgEn = "Hello Sangmeshwar Jewellers, I would like to inquire about '" + item + "' and see available designs.";
+          const u = getWhatsAppUrl(msgMr, msgEn);
+          if (u !== '#') window.open(u, '_blank');
+          else showToast("WhatsApp number: to be configured");
+        };
+      });
+    }
+
+    function initRatesAndCalculator() {
+      const now = new Date();
+      const istDateString = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(now);
+      const isRateFresh = SHOP_CONFIG.ratesDate === istDateString;
+      const hasRates = SHOP_CONFIG.rates && SHOP_CONFIG.rates.gold22k !== null;
+
+      const rateDateEl = document.getElementById('rateDateDisplay');
+      if (rateDateEl && SHOP_CONFIG.ratesDate) {
+        rateDateEl.innerHTML = '<span class="lang-mr">तारीख: ' + SHOP_CONFIG.ratesDate + '</span><span class="lang-en">Date: ' + SHOP_CONFIG.ratesDate + '</span>';
+      }
+
+      const calcDisabled = document.getElementById('calcDisabledNotice');
+      const calcActive = document.getElementById('calcActiveContent');
+
+      if (isRateFresh && hasRates) {
+        if (document.getElementById('rate24kVal') && SHOP_CONFIG.rates.gold24k) {
+          document.getElementById('rate24kVal').textContent = '₹' + SHOP_CONFIG.rates.gold24k.toLocaleString('en-IN') + ' /g';
+        }
+        if (document.getElementById('rate22kVal') && SHOP_CONFIG.rates.gold22k) {
+          document.getElementById('rate22kVal').textContent = '₹' + SHOP_CONFIG.rates.gold22k.toLocaleString('en-IN') + ' /g';
+        }
+        if (document.getElementById('rate18kVal') && SHOP_CONFIG.rates.gold18k) {
+          document.getElementById('rate18kVal').textContent = '₹' + SHOP_CONFIG.rates.gold18k.toLocaleString('en-IN') + ' /g';
+        }
+        if (document.getElementById('rateSilverVal') && SHOP_CONFIG.rates.silver999) {
+          document.getElementById('rateSilverVal').textContent = '₹' + SHOP_CONFIG.rates.silver999.toLocaleString('en-IN') + ' /g';
+        }
+
+        if (calcDisabled) calcDisabled.style.display = 'none';
+        if (calcActive) calcActive.style.display = 'block';
+
+        const metalSelect = document.getElementById('calcMetalSelect');
+        const weightInput = document.getElementById('calcWeightInput');
+        const resultEl = document.getElementById('calcResultDisplay');
+
+        function calculate() {
+          const metal = metalSelect ? metalSelect.value : 'gold22k';
+          const weight = parseFloat(weightInput ? weightInput.value : 0) || 0;
+          const rate = (SHOP_CONFIG.rates && SHOP_CONFIG.rates[metal]) ? SHOP_CONFIG.rates[metal] : 0;
+          const total = Math.round(rate * weight);
+          if (resultEl) {
+            resultEl.textContent = '₹' + total.toLocaleString('en-IN');
+          }
+        }
+
+        if (metalSelect) metalSelect.addEventListener('change', calculate);
+        if (weightInput) weightInput.addEventListener('input', calculate);
+        calculate();
+      } else {
+        if (calcDisabled) calcDisabled.style.display = 'block';
+        if (calcActive) calcActive.style.display = 'none';
+      }
+    }
+
+    function initDrawer() {
+      const btn = document.getElementById('menuToggleBtn');
+      const drawer = document.getElementById('mobileNavDrawer');
+      if (btn && drawer) {
+        btn.addEventListener('click', function() {
+          const isOpen = drawer.classList.contains('open');
+          if (isOpen) {
+            drawer.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+          } else {
+            drawer.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+
+        drawer.querySelectorAll('.drawer-link').forEach(link => {
+          link.addEventListener('click', function() {
+            drawer.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    }
+
+    function initScrollReveal() {
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+      if (typeof IntersectionObserver === 'undefined') {
+        return;
+      }
+
+      const targets = document.querySelectorAll(
+        '.quick-scan-section, .collections-section, .catalogue-section, .book-visit-section, .custom-design-section, .services-section, .owner-section, .why-section, .rates-section, .google-reviews-section, .qr-section, .visit-section, .site-footer, .editorial-tile, .step-card, .service-card, .why-card, .rates-container, .visit-info-card, .map-frame-box'
+      );
+
+      const observer = new IntersectionObserver(function(entries, obs) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '0px 0px -40px 0px',
+        threshold: 0.08
+      });
+
+      targets.forEach(el => {
+        el.classList.add('reveal-item');
+        observer.observe(el);
+      });
+    }
+
+    function updateSeoMeta() {
+      if (SHOP_CONFIG.siteUrl && SHOP_CONFIG.siteUrl.trim()) {
+        const base = SHOP_CONFIG.siteUrl.trim().replace(/\/+$/, '');
+        let canon = document.querySelector('link[rel="canonical"]');
+        if (!canon) {
+          canon = document.createElement('link');
+          canon.setAttribute('rel', 'canonical');
+          document.head.appendChild(canon);
+        }
+        canon.setAttribute('href', base + '/');
+
+        let ogUrl = document.querySelector('meta[property="og:url"]');
+        if (!ogUrl) {
+          ogUrl = document.createElement('meta');
+          ogUrl.setAttribute('property', 'og:url');
+          document.head.appendChild(ogUrl);
+        }
+        ogUrl.setAttribute('content', base + '/');
+
+        let ogImg = document.querySelector('meta[property="og:image"]');
+        if (!ogImg) {
+          ogImg = document.createElement('meta');
+          ogImg.setAttribute('property', 'og:image');
+          document.head.appendChild(ogImg);
+        }
+        ogImg.setAttribute('content', base + '/images/hero_desktop.webp');
+      }
+    }
+
+    function injectSchema() {
+      const graph = [
+        {
+          "@type": "WebSite",
+          "name": SHOP_CONFIG.shopNameEn,
+          "alternateName": SHOP_CONFIG.shopNameMr,
+          "url": SHOP_CONFIG.siteUrl || "/",
+          "description": "Local boutique jewellery showroom offering gold, silver, diamond ornaments, custom design, and repair services in Ahmedpur, Maharashtra."
+        },
+        {
+          "@type": "JewelryStore",
+          "name": SHOP_CONFIG.shopNameEn,
+          "alternateName": SHOP_CONFIG.shopNameMr,
+          "description": "Local boutique jewellery showroom offering gold, pure silver articles, diamond ornaments, custom design, and repair services in Ahmedpur, Maharashtra.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Thodga Road, Basweshwar Nagar, Vidhya Nagar",
+            "addressLocality": "Ahmedpur",
+            "addressRegion": "Maharashtra",
+            "postalCode": "413515",
+            "addressCountry": "IN"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where is Sangmeshwar Jewellers located in Ahmedpur?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sangmeshwar Jewellers is located on Thodga Road, Basweshwar Nagar, Vidhya Nagar, Ahmedpur, Latur district, Maharashtra 413515."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What gold purities and silver standards are available in the showroom?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We provide 22K gold (91.6% purity), 18K gold (75.0% purity), 999 fine silver pooja articles and coins, and 925 sterling silver anklets and ornaments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can customers verify gold purity and BIS hallmarking?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Authentic hallmarked gold features the triangular BIS logo, purity fineness mark (such as 22K916), and a 6-digit alphanumeric HUID code that can be verified on the official BIS Care mobile app."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I request a showroom visit or custom jewellery order?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can select a preferred day and time choice via our online 'Request a visit' form or send reference photos directly to our WhatsApp number."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is the final price of gold jewellery calculated?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The calculation formula is: [Net Gold Weight (grams) * Today's Gold Rate per gram] + Making Charges + applicable GST. Embedded stones and beads are deducted from gross weight."
+              }
+            }
+          ]
+        }
+      ];
+
+      // Add phone, openingHours, and geo only when explicitly set
+      if (SHOP_CONFIG.phoneNumber && SHOP_CONFIG.phoneNumber.trim()) {
+        graph[1].telephone = SHOP_CONFIG.phoneNumber.trim();
+      }
+      if (SHOP_CONFIG.openingHours && SHOP_CONFIG.openingHours !== "Hours: to be confirmed") {
+        graph[1].openingHours = SHOP_CONFIG.openingHours;
+      }
+      if (SHOP_CONFIG.geo && SHOP_CONFIG.geo.latitude && SHOP_CONFIG.geo.longitude) {
+        graph[1].geo = {
+          "@type": "GeoCoordinates",
+          "latitude": SHOP_CONFIG.geo.latitude,
+          "longitude": SHOP_CONFIG.geo.longitude
+        };
+      }
+
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": graph
+      });
+      document.head.appendChild(script);
+
+      updateSeoMeta();
+    }
+
+    /* Initialize Everything */
+    document.addEventListener('DOMContentLoaded', function() {
+      initLanguage();
+      initHeaderScroll();
+      updateFestivalBanner();
+      initContacts();
+      updateWhatsAppLinks();
+      initFilterChips();
+      WishlistStore.updateUI();
+      initWishlistSender();
+      initBookVisit();
+      renderGoogleReviews();
+      initQrShare();
+      initRatesAndCalculator();
+      initDrawer();
+      injectSchema();
+      initScrollReveal();
+
+      const yearEl = document.getElementById('copyrightYear');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

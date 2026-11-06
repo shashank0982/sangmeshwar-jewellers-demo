@@ -1,0 +1,8 @@
+{
+  "name": "Sangmeshwar Jewellers – संगमेश्वर ज्वेलर्स",
+  "description": "Local jewellery showroom for hallmark gold, silver, and diamond ornaments, custom jewellery design, and repair in Ahmedpur, Maharashtra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
